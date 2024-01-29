@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumni | University of Sam</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/uos-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav_header" id="nav_head">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="./php/staff.php" class="nav__hlink">Staff</a>
+        <a href="international.html" class="nav__hlink">International</a>
+        <a href="alumni.html#alumni-welcome" class="nav__hlink">Alumni</a>
+        <a href="news.html#news" class="nav__hlink">News</a>
+        <a href="admission.html" class="nav__hlink">Admission</a>
+        <a href="contact.html" class="nav__hlink">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Logo Section -->
+    <div class="Logo__Sector">
+      <div class="Logo__img">
+        <a href="home.html">
+          <img src="./assets/img/Logo.png" alt="" />
+        </a>
+      </div>
+      <button class="openBtn" onclick="openSearch()">
+        <i class="fas fa-search fa-2x" style="color: #000000"></i>
+      </button>
+    </div>
+
+    <div id="Searchbox" class="Searchbox">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >x</span
+      >
+      <div class="Searchbox-content">
+        <h2 class="mb-3 p-3 text-light">Search Everything Here</h2>
+        <form id="sub">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            id="searchInput"
+          />
+          <div id="searchList"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Navigation Bars -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__dropdownitem">
+          <a href="study.html#intro" class="nav__link">Study</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="8"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="study.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="find_course.html#intro" class="header__link"
+                  >FIND A COURSE</a
+                >
+              </td>
+              <td>
+                <a href="study.html#info" class="header__link"
+                  >INFORMATION FOR</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="business.html#courses" class="nav__ddlink">Business</a>
+              </td>
+              <td>
+                <a href="undergraduate.html#intro" class="nav__ddlink"
+                  >Undergraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="engineering.html#courses" class="nav__ddlink"
+                  >Engineering</a
+                >
+              </td>
+              <td>
+                <a href="postgraduate.html#intro" class="nav__ddlink"
+                  >Postgraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="health.html#courses" class="nav__ddlink">Health</a>
+              </td>
+              <td>
+                <a href="international.html" class="nav__ddlink"
+                  >International Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a
+                  href="information_technology.html#courses"
+                  class="nav__ddlink"
+                  >Information Technology</a
+                >
+              </td>
+              <td>
+                <a href="entry_requirement.html" class="nav__ddlink"
+                  >Entry Requirements</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="security.html#courses" class="nav__ddlink"
+                  >Security, intelligence and criminology</a
+                >
+              </td>
+              <td>
+                <a href="fees.html#intro" class="nav__ddlink">Fees and costs</a>
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="curstudent.html#intro" class="nav__link">Current Students</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="3">
+                <a href="curstudent.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="curstudent.html#oppo" class="header__link"
+                  >OPPORTUNITIES</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#support" class="header__link"
+                  >SUPPORT</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#life" class="header__link"
+                  >Life at UOS</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="scholarship.html#intro" class="nav__ddlink"
+                  >Scholarships</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#access" class="nav__ddlink"
+                  >Accessibility service</a
+                >
+              </td>
+              <td>
+                <a href="./php/student.php" class="nav__ddlink"
+                  >Student Portal</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#global" class="nav__ddlink"
+                  >Global opportunities</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#academic" class="nav__ddlink"
+                  >Academic support</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="nav__ddlink">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#career" class="nav__ddlink"
+                  >Career development</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#health" class="nav__ddlink"
+                  >Health and wellbeing</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="gallery.html#Exhibition" class="nav__link">Gallery</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="6"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="gallery.html#Exhibition" class="nav__ddlink"
+                  >Overview</a
+                >
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="gallery.html#Exhibition" class="header__link"
+                  >Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="header__link">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#current" class="nav__ddlink"
+                  >Current Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#sports" class="nav__ddlink">Sports</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#future" class="nav__ddlink"
+                  >Upcoming Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#activities" class="nav__ddlink"
+                  >Activities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#past" class="nav__ddlink"
+                  >Past Exhibitions</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="about.html#intro" class="nav__link">About Us</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+            <tr class="overview">
+              <td colspan="3">
+                <a href="about.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="university.html#facilities__about" class="header__link"
+                  >About UOS</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#service" class="header__link"
+                  >Campus Services</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#intro" class="header__link"
+                  >Facilities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="university.html#vision" class="nav__ddlink"
+                  >Vision and strategy</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#student" class="nav__ddlink"
+                  >Students life and support</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#library" class="nav__ddlink"
+                  >Library</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="campus.html#intro" class="nav__ddlink">Our campus</a>
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Campus security</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#cafe" class="nav__ddlink"
+                  >Café, bar and restaurant</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="faculties.html#intro" class="nav__ddlink"
+                  >Our faculties</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Children and youth</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="contact.html" class="nav__ddlink"
+                  >Location and contacts</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </nav>
+    <!---------- Alumni  Starts --------->
+
+    <div class="alumni">
+      <div class="card" id="banner">
+        <img class="card-img-top" src="./assets/img/alumni-banner.png" alt="" />
+        <div class="card-img-overlay">
+          <h2>Alumni</h2>
+        </div>
+      </div>
+      <div class="container">
+        <nav
+          style="--bs-breadcrumb-divider: '>'; font-weight: 500"
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="home.html">University of Sam</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Alumni</li>
+          </ol>
+        </nav>
+      </div>
+      <br />
+
+      <div class="container" id="alumni-welcome">
+        <div class="col-md-7 p-3">
+          <h2>Alumni and supporters</h2>
+          <br />
+          <p>
+            Whether you’re a UOS graduate or a supporter of our work, you’re
+            part of something big. The UOS community is a global network of
+            future-focused game changers who value education, innovation and
+            positive impact. Explore how you can stay connected or get involved
+            with the UOS community today.
+          </p>
+        </div>
+        <hr />
+      </div>
+
+      <div class="container mt-3">
+        <div class="row mt-3" id="alumni-about" data-aos="zoom-in">
+          <div class="col-md-4 mt-3 p-3 text-center">
+            <img
+              src="./assets/img/undergrad.png"
+              alt=""
+              height="100px"
+              class="mx-auto"
+            />
+            <br />
+            <h4>321,000+ alumni</h4>
+            <p>We are a large and vibrant community</p>
+          </div>
+
+          <div class="col-md-4 mt-3 p-3 text-center">
+            <img
+              src="./assets/img/world.png"
+              alt=""
+              height="100px"
+              class="mx-auto"
+            />
+            <br />
+            <h4>From 123 different countries</h4>
+            <p>UOS alumni live and work all over the world</p>
+          </div>
+
+          <div class="col-md-4 mt-3 p-3 text-center">
+            <img
+              src="./assets/img/chart.png"
+              alt=""
+              height="100px"
+              class="mx-auto"
+            />
+            <br />
+            <h4>60% are undergraduate alumni</h4>
+            <p>While 40% of our alumni have completed postgraduate study</p>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="container" id="alumni-blah">
+        <h2 class="text-center mt-3">Ideate, innovate and connect</h2>
+        <div class="row mt-3">
+          <div class="col-md-4 mt-3 p-3 mx-auto" id="alumni1">
+            <a data-bs-toggle="modal" data-bs-target="#myModal1">
+              <div class="card mx-auto">
+                <img
+                  class="card-img-top"
+                  src="./assets/img/alumni1.jpg"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <br />
+                <div class="card-body">
+                  <div class="shard"></div>
+                  <h4 class="card-title">Alumni benefits</h4>
+                  <br />
+                  <p class="card-text">
+                    Find out exclusive benefits and discounts for UOS alumni.
+                  </p>
+
+                  <p class="pt-3">
+                    <span class="text-primary">Discover alumni benefits ❯</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 mt-3 p-3 mx-auto" id="alumni2">
+            <a data-bs-toggle="modal" data-bs-target="#myModal2">
+              <div class="card mx-auto">
+                <img
+                  class="card-img-top"
+                  src="./assets/img/alumni2.png"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <br />
+                <div class="card-body">
+                  <div class="shard"></div>
+                  <h4 class="card-title">Support for entrepreneurs</h4>
+                  <br />
+                  <p class="card-text">
+                    Supporting technology-enabled entrepreneurship at scale.
+                  </p>
+
+                  <p class="pt-3">
+                    <span class="text-primary">Explore more ❯</span>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 mt-3 p-3 mx-auto" id="alumni3">
+            <a data-bs-toggle="modal" data-bs-target="#myModal3">
+              <div class="card mx-auto">
+                <img
+                  class="card-img-top"
+                  src="./assets/img/alumni3.png"
+                  alt="Card image"
+                  style="width: 100%"
+                />
+                <br />
+                <div class="card-body">
+                  <div class="shard"></div>
+                  <h4 class="card-title">Local and Global Networks</h4>
+                  <br />
+                  <p class="card-text">
+                    Stay connected locally and internationally with your fellow
+                    alumni.
+                  </p>
+
+                  <p class="pt-3">
+                    <span class="text-primary"
+                      >View Postgraduate courses ❯</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <hr />
+
+        <div class="container" id="blah">
+          <div class="row mt-3">
+            <div class="col-md-6 mt-3 p-3 mx-auto" id="blah-contact">
+              <hr />
+              <a href="contact.html">
+                <div class="card mx-auto">
+                  <div class="card-body">
+                    <div class="shard"></div>
+                    <h4 class="card-title">Contact Us</h4>
+                    <br />
+                    <p class="card-text">
+                      Our Alumni Relations team is here to help you along the
+                      way about UOS.
+                    </p>
+
+                    <p class="pt-3">
+                      <span class="text-primary">Connect with us ❯ </span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <hr />
+            </div>
+
+            <div class="col-md-6 mt-3 p-3 mx-auto" id="blah-news">
+              <hr />
+              <a href="news.html">
+                <div class="card mx-auto">
+                  <div class="card-body">
+                    <div class="shard"></div>
+                    <h4 class="card-title">News</h4>
+                    <br />
+                    <p class="card-text">
+                      Stay up to date with the latest news from the wider UOS
+                      alumni network.
+                    </p>
+
+                    <p class="pt-3">
+                      <span class="text-primary"
+                        >Find out what's happening ❯</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <hr />
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal 1 -->
+      <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Alumni Advantage program</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p>
+                <span class="text-secondary"
+                  >As a UOS graduate, you automatically get a 10% discount on
+                  UOS postgraduate programs and many short courses through our
+                  Alumni Advantage program.</span
+                >
+              </p>
+              <br />
+              <p>
+                We know that our graduates are always searching for new ways to
+                expand their skills and knowledge, so if you’re looking to
+                advance in your current industry, kickstart a career change or
+                take the next step in your study, we'd love you to join us here
+                at UOS again.
+              </p>
+              <p>We offer many a range of study options, including:</p>
+              <ul>
+                <li>
+                  Short courses (and free taster courses) that provide insight
+                  into specific topic areas relevant to your workplace.
+                </li>
+                <li>
+                  Postgraduate courses that are industry-focused degrees
+                  designed by researchers at the forefront of their field.
+                </li>
+              </ul>
+              <br />
+
+              <h4>How do I access the 10% discount?</h4>
+              <br />
+              <p>
+                All you have to do is apply for the course you wish to study. If
+                you're accepted into a course included in the Alumni Advantage
+                program, the saving will appear as a 10% Alumni Discount in your
+                enrolment invoice. Just make sure to check your course guide for
+                eligibility before enrolling.
+              </p>
+              <br />
+
+              <h4>Who is eligible for the Alumni Advantage?</h4>
+              <br />
+              <p>
+                The Alumni Advantage Program is open to international and
+                domestic alumni who have completed a degree course at UOS,
+                including:
+              </p>
+              <ul>
+                <li>
+                  Undergraduate courses
+                  <ul>
+                    <li>All Bachelors (including Honours) and</li>
+                    <li>Combined Degrees</li>
+                  </ul>
+                </li>
+                <li>
+                  Postgraduate courses including
+                  <ul>
+                    <li>Masters</li>
+                  </ul>
+                </li>
+                <li>
+                  Newly completed students who have not formally graduated but
+                  have completed all requirements for courses
+                </li>
+              </ul>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 1 -->
+
+      <!-- The Modal 2 -->
+      <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Support for entrepreneurs</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p>
+                <span class="text-secondary"
+                  >UOS Startups is the home of entrepreneurship at UOS,
+                  inspiring and supporting technology-enabled entrepreneurship
+                  at scale in order to drive economic, employment and learning
+                  outcomes.</span
+                >
+              </p>
+              <br />
+              <p>
+                Since launching in 2018, UOS Startups has built the largest
+                community of student-launched startups in Myanmar, and now UOS
+                Alumni residing in Myanmar are for the first time invited to
+                join this exciting community of entrepreneurs.
+              </p>
+              <br />
+              <p>
+                If you are thinking about taking your startup to the next level,
+                join us!
+              </p>
+              <br />
+              <p>
+                Through the program, you can access a range of support designed
+                to help you continue and grow your startup including Myanmar CBD
+                collaboration spaces, UOS facilities, strategic connections,
+                inspiring talks and masterclasses, profile-building
+                opportunities and more.
+              </p>
+              <p>
+                You’ll also be expected to give back through mentorship and
+                advice, or hosting seminars in your area of expertise, or
+                working with UOS students to develop their skills and inspire
+                the next generation of entrepreneurs.
+              </p>
+              <br />
+              <p>
+                <span class="text-primary"
+                  >Connect with like-minded entrepreneurs and become a part of
+                  our stellar entrepreneurship community today!</span
+                >
+              </p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 2 -->
+
+      <!-- The Modal 3 -->
+      <div class="modal fade" id="myModal3">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Connect with your fellow UOS alumni</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <p>
+                Join one of the many networks that make up Sam University's
+                global alumni network.
+              </p>
+              <br />
+              <p>
+                Stay connected with other graduates — both local and
+                international — in our vibrant alumni community.
+              </p>
+              <div class="row">
+                <hr />
+                <div class="col-md-4 mt-3 p-3 text-center">
+                  <img
+                    src="./assets/img/world.png"
+                    alt=""
+                    height="100px"
+                    class="mx-auto"
+                  />
+                  <br />
+                  <h5>From 123 different countries</h5>
+                  <p>UOS alumni live and work all over the world</p>
+                </div>
+
+                <div class="col-md-4 mt-3 p-3 text-center">
+                  <img
+                    src="./assets/img/location-icon.png"
+                    alt=""
+                    height="100px"
+                    class="mx-auto"
+                  />
+                  <br />
+                  <h5>70% of our alumni are based here</h5>
+                  <p>14% are based internationally (16% remain unknown)</p>
+                </div>
+
+                <div class="col-md-4 mt-3 p-3 text-center">
+                  <img
+                    src="./assets/img/undergrad.png"
+                    alt=""
+                    height="100px"
+                    class="mx-auto"
+                  />
+                  <br />
+                  <h5>Alumni aged 36-54 make up 42%</h5>
+                  <p>36% are under 35 and 22% of our alumni are over 55</p>
+                </div>
+                <hr />
+              </div>
+              <p><b>Our alumni networks</b></p>
+              <br />
+              <p>Our alumni networks allow you to:</p>
+              <ul>
+                <li>engage and connect with alumni</li>
+                <li>
+                  expand your professional and personal networks and skills
+                </li>
+                <li>
+                  share local or industry knowledge with your fellow alumni and
+                  the University.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal 3 -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!---------- Alumni  Ends --------->
+
+    <!---------- Footer  Starts --------->
+    <footer>
+      <div class="footer">
+        <br />
+        <table class="footer__cont">
+          <tr class="footer_header">
+            <td><a class="footer__hlink">Quick links</a></td>
+            <td><a class="footer__hlink">Information for</a></td>
+            <td><a class="footer__hlink">Faculties, schools and college</a></td>
+            <td><a class="footer__hlink">Media</a></td>
+            <td><a class="footer__hlink">Contact us</a></td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="home.html" class="footer__link">Home</a></td>
+            <td>
+              <a href="study.html#intro" class="footer__link"
+                >Future Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_business.html#welcome-business"
+                class="footer__link"
+                >Faculty of Business</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#Exhibition" class="footer__link">Gallery</a>
+            </td>
+            <td>
+              <a href="contact.html" class="footer__link"
+                >Location and contacts</a
+              >
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="find_course.html#intro" class="footer__link"
+                >Find a course</a
+              >
+            </td>
+            <td>
+              <a href="international.html" class="footer__link"
+                >International Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_health.html#welcome-health"
+                class="footer__link"
+                >Faculty of Health</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#events" class="footer__link">Events</a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="how_to_apply.html#intro" class="footer__link"
+                >How to apply</a
+              >
+            </td>
+            <td>
+              <a href="recognition.html" class="footer__link"
+                >Recognition of Prior Learning</a
+              >
+            </td>
+            <td>
+              <a href="faculty_of_science.html#wahaha" class="footer__link"
+                >Faculty of Science and Engineering</a
+              >
+            </td>
+            <td><a href="news.html#news" class="footer__link">News</a></td>
+            <td>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCrcNBJstILOoDvFMM1CmXIQ"
+                class="footer__icon"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="admission.html" class="footer__link">Admission</a></td>
+            <td>
+              <a href="scholarship.html#intro" class="footer__link"
+                >Scholarships</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="footer__copy">&copy; Copyright UOS. All Rights Reserved</p>
+    </footer>
+    <!---------- Footer Ends --------->
+
+    <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        if (pos > 100) {
+          scrollProgress.style.display = "grid";
+        } else {
+          scrollProgress.style.display = "none";
+        }
+        scrollProgress.addEventListener("click", () => {
+          document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#16a7e0 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      };
+      window.onscroll = calcScrollValue;
+      window.onload = calcScrollValue;
+    </script>
+
+    <script>
+      function openSearch() {
+        document.getElementById("Searchbox").style.display = "block";
+      }
+
+      // Close the full screen search box
+      function closeSearch() {
+        document.getElementById("Searchbox").style.display = "none";
+      }
+
+      const sub = document.getElementById("sub"); //get the form id
+      const input = document.getElementById("searchInput"); //get the search input id
+      const searchList = document.getElementById("searchList"); //get the search list where you want your searched item to display
+
+      //search the info.json file and filter it in the search box to appear when searched
+      const searchInfo = async (searchJson) => {
+        //am using Es6 arrow function here
+
+        const response = await fetch("./assets/js/info.json"); //get the json file into your javascript
+
+        const info = await response.json(); //add the .json to the file to make it into a json in the javascript
+
+        //make the searched term in the search box to match what is in the json file and filter it
+        let list = info.filter((infos) => {
+          const infoReg = new RegExp(`^${searchJson}`, "gi"); //the ^ in the REgExp means that only the first letter of the searched value will searched eg i want money to be searched by the first m not the other letters in it
+
+          //the 'gi' above means you can search with both uppercase and lowercase letter and still get the same search value
+
+          return infos.name.match(infoReg); //return what you what the json file to be searched with
+          //as for me i want it to be searched with the name but you can choose anything you want either searched with url or number
+        });
+
+        //how to check if there is no value in the search box and if there is none then don't show anything
+        if (searchJson.length == 0) {
+          list = [];
+          searchList.innerHTML = ""; //makes the info searched to be removed if there is no searched term/word in the input
+        }
+
+        //call the outputInfo function inside the here
+        outputInfo(list);
+      };
+
+      //creating what will be be displayed when you type in your search
+      const outputInfo = (list) => {
+        if (list.length > 0) {
+          //add the search value you want to show when you search the page
+          const inputValue = list
+            .map(
+              (info) => `
+         <div class="card card-body p-3" style="background: #eee;">
+                <h3 class="text-start"><a href="${info.url}" target="_self" id="search-link">${info.name}</a></h3>
+            </div>
+    `
+            )
+            .join("");
+          // add the searched value(inputValue) to the div in index.html (searchList)
+          searchList.innerHTML = inputValue;
+        }
+      };
+
+      // add Eventlistener to the input
+      sub.addEventListener("input", (e) => {
+        //    e.preventDefault(); //stop it from actually submiting the file
+
+        searchInfo(input.value); //
+
+        //    input.value = ''; //after searching remove the value in the input
+      });
+    </script>
+  </body>
+</html>

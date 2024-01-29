@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,500i,600,600i,700,700i |Cormorant+SC:400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;900&family=Neuton:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/* Custom Properties Start*/
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-blah:'Inter', sans-serif !important;
+    --ff-cor:'Cormorant Garamond', sans-serif !important;
+    --ff-inter:'Oswald', sans-serif !important;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    --fw-semibold: 550;
+    
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16a7e0;
+    --clr-blue : #4682B4;
+    --clr-lightblue : #87CEFA;
+    --clr-azure : #F0FFFF;
+    --clr-lightgray :#FFFAFA;
+    --clr-silver : #C0C0C0;
+    --clr-milk : #FDFDEE;
+    --clr-orangered:#FF4500;
+    --clr-gainsboro :#DCDCDC;
+    --clr-lime:#00FF00;
+
+    --white-color: hsl(0, 0%, 100%);
+    --black-color: hsl(0, 0%, 0%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --h1-font-size: 1.75rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    --blue-one-hex: 93,203,215;
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+/* Custom Properties End*/
+
+/*General Styles Start*/
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong { font-weight: var(--fw-bold) }
+
+:focus {
+    outline: 3px solid var(--clr-blue);
+    outline-offset: 3px;
+}
+/*General Styles End*/
+
+
+/* Typography Start*/
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+table{border-collapse:separate;}
+table,td{border:0px solid #000000;}
+td{padding:10px;}
+/* Typography End*/
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body,
+  input,
+  button {
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+  }
+  
+  body {
+    color: var(--white-color);
+  }
+  
+  input,
+  button {
+    border: none;
+    outline: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+  
+  /*=============== LOGIN ===============*/
+
+  .Logo__img {
+    display: block;
+    position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+  .login {
+    position: relative;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+  }
+  .login__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .login__form {
+    position: relative;
+    background-color: hsla(0, 0%, 10%, 0.1);
+    border: 2px solid var(--white-color);
+    margin-inline: 1.5rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+    outline: none;
+  }
+  .login__title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 2rem;
+    
+  }
+  .login__content, .login__box {
+    display: grid;
+  }
+  .login__content {
+    row-gap: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .login__box {
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: 0.75rem;
+    border-bottom: 2px solid var(--white-color);
+  }
+  .login__icon, .login__eye {
+    font-size: 1.25rem;
+  }
+  .login__input {
+    width: 100%;
+    padding-block: 0.8rem;
+    background: none;
+    color: var(--white-color);
+    position: relative;
+    z-index: 1;
+    outline: none;
+  }
+  .login__box-input {
+    position: relative;
+  }
+  .login__label {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    font-weight: var(--font-medium);
+    transition: top 0.3s, font-size 0.3s;
+  }
+  .login__eye {
+    position: absolute;
+    right: 0;
+    top: 18px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .login__box:nth-child(2) input {
+    padding-right: 1.8rem;
+  }
+  .login__check, .login__check-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .login__check {
+    margin-bottom: 1.5rem;
+  }
+  .login__check-label, .login__forgot, .login__register {
+    font-size: var(--small-font-size);
+  }
+  .login__check-group {
+    column-gap: 0.5rem;
+  }
+  .login__check-input {
+    width: 16px;
+    height: 16px;
+  }
+  .login__forgot {
+    color: var(--white-color);
+  }
+  .login__forgot:hover {
+    text-decoration: underline;
+  }
+  .login__button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  .login__register {
+    text-align: center;
+  }
+  .login__register a {
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+  }
+  .login__register a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Input focus move up label */
+  .login__input:focus + .login__label {
+    top: -12px;
+    font-size: var(--small-font-size);
+  }
+  
+  /* Input focus sticky top label */
+  .login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
+    top: -12px;
+    font-size: var(--small-font-size);
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For medium devices */
+  @media screen and (min-width: 576px) {
+    .login {
+      justify-content: center;
+    }
+    .login__form {
+      width: 432px;
+      padding: 4rem 3rem 3.5rem;
+      border-radius: 1.5rem;
+    }
+    .login__title {
+      font-size: 2rem;
+    }
+  }
+

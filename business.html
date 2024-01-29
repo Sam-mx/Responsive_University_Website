@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business | University of Sam</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/uos-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav_header" id="nav_head">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="./php/staff.php" class="nav__hlink">Staff</a>
+        <a href="international.html" class="nav__hlink">International</a>
+        <a href="alumni.html#alumni-welcome" class="nav__hlink">Alumni</a>
+        <a href="news.html#news" class="nav__hlink">News</a>
+        <a href="admission.html" class="nav__hlink">Admission</a>
+        <a href="contact.html" class="nav__hlink">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Logo Section -->
+    <div class="Logo__Sector">
+      <div class="Logo__img">
+        <a href="home.html">
+          <img src="./assets/img/Logo.png" alt="" />
+        </a>
+      </div>
+      <button class="openBtn" onclick="openSearch()">
+        <i class="fas fa-search fa-2x" style="color: #000000"></i>
+      </button>
+    </div>
+
+    <div id="Searchbox" class="Searchbox">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >x</span
+      >
+      <div class="Searchbox-content">
+        <h2 class="mb-3 p-3 text-light">Search Everything Here</h2>
+        <form id="sub">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            id="searchInput"
+          />
+          <div id="searchList"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Navigation Bars -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__dropdownitem">
+          <a href="study.html#intro" class="nav__link">Study</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="8"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="study.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="find_course.html#intro" class="header__link"
+                  >FIND A COURSE</a
+                >
+              </td>
+              <td>
+                <a href="study.html#info" class="header__link"
+                  >INFORMATION FOR</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="business.html#courses" class="nav__ddlink">Business</a>
+              </td>
+              <td>
+                <a href="undergraduate.html#intro" class="nav__ddlink"
+                  >Undergraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="engineering.html#courses" class="nav__ddlink"
+                  >Engineering</a
+                >
+              </td>
+              <td>
+                <a href="postgraduate.html#intro" class="nav__ddlink"
+                  >Postgraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="health.html#courses" class="nav__ddlink">Health</a>
+              </td>
+              <td>
+                <a href="international.html" class="nav__ddlink"
+                  >International Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a
+                  href="information_technology.html#courses"
+                  class="nav__ddlink"
+                  >Information Technology</a
+                >
+              </td>
+              <td>
+                <a href="entry_requirement.html" class="nav__ddlink"
+                  >Entry Requirements</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="security.html#courses" class="nav__ddlink"
+                  >Security, intelligence and criminology</a
+                >
+              </td>
+              <td>
+                <a href="fees.html#intro" class="nav__ddlink">Fees and costs</a>
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="curstudent.html#intro" class="nav__link">Current Students</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="3">
+                <a href="curstudent.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="curstudent.html#oppo" class="header__link"
+                  >OPPORTUNITIES</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#support" class="header__link"
+                  >SUPPORT</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#life" class="header__link"
+                  >Life at UOS</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="scholarship.html#intro" class="nav__ddlink"
+                  >Scholarships</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#access" class="nav__ddlink"
+                  >Accessibility service</a
+                >
+              </td>
+              <td>
+                <a href="./php/student.php" class="nav__ddlink"
+                  >Student Portal</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#global" class="nav__ddlink"
+                  >Global opportunities</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#academic" class="nav__ddlink"
+                  >Academic support</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="nav__ddlink">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#career" class="nav__ddlink"
+                  >Career development</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#health" class="nav__ddlink"
+                  >Health and wellbeing</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="gallery.html#Exhibition" class="nav__link">Gallery</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="6"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="gallery.html#Exhibition" class="nav__ddlink"
+                  >Overview</a
+                >
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="gallery.html#Exhibition" class="header__link"
+                  >Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="header__link">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#current" class="nav__ddlink"
+                  >Current Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#sports" class="nav__ddlink">Sports</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#future" class="nav__ddlink"
+                  >Upcoming Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#activities" class="nav__ddlink"
+                  >Activities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#past" class="nav__ddlink"
+                  >Past Exhibitions</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="about.html#intro" class="nav__link">About Us</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+            <tr class="overview">
+              <td colspan="3">
+                <a href="about.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="university.html#facilities__about" class="header__link"
+                  >About UOS</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#service" class="header__link"
+                  >Campus Services</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#intro" class="header__link"
+                  >Facilities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="university.html#vision" class="nav__ddlink"
+                  >Vision and strategy</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#student" class="nav__ddlink"
+                  >Students life and support</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#library" class="nav__ddlink"
+                  >Library</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="campus.html#intro" class="nav__ddlink">Our campus</a>
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Campus security</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#cafe" class="nav__ddlink"
+                  >Café, bar and restaurant</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="faculties.html#intro" class="nav__ddlink"
+                  >Our faculties</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Children and youth</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="contact.html" class="nav__ddlink"
+                  >Location and contacts</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </nav>
+
+    <!---------- Business  Starts --------->
+    <div class="business">
+      <div class="card" id="banner">
+        <img
+          class="card-img-top"
+          src="./assets/img/business-course-banner.png"
+          alt=""
+        />
+        <div class="card-img-overlay">
+          <h2>Business</h2>
+        </div>
+      </div>
+      <div class="business-top">
+        <div class="container">
+          <nav
+            style="--bs-breadcrumb-divider: '>'; font-weight: 500"
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="home.html">University of Sam</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="study.html#intro">Study</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Business
+              </li>
+            </ol>
+          </nav>
+        </div>
+        <br />
+
+        <div class="container" id="courses">
+          <h4>Select an area of interest:</h4>
+          <hr />
+          <div class="row" id="business-link">
+            <div class="col" id="buscol">
+              <a
+                class="buslink"
+                onclick="openPage('Accounting', this, '#fff')"
+                id="ShowA"
+                >Accounting</a
+              >
+            </div>
+            <div class="col">
+              <a
+                class="buslink"
+                onclick="openPage('BAdmin', this, '#fff')"
+                id="ShowB"
+                >Business administration</a
+              >
+            </div>
+            <div class="col">
+              <a
+                class="buslink"
+                onclick="openPage('Banaly', this, '#fff')"
+                id="ShowC"
+                >Business analytics</a
+              >
+            </div>
+            <div class="col">
+              <a
+                class="buslink"
+                onclick="openPage('Commerce', this, '#fff')"
+                id="ShowD"
+                >Commerce</a
+              >
+            </div>
+          </div>
+
+          <!-- The Table 1 -->
+          <div class="buscontent" id="Accounting">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="btn-close"
+              id="topright"
+            ></span>
+            <div class="container-fluid">
+              <div id="heading">Accounting</div>
+
+              <hr />
+
+              <p>
+                Accounting is often referred to as the language of business.
+                Understanding this language means accountants are key
+                contributors to a business’ success.
+              </p>
+              <p>
+                UOS accounting courses enable you to meet the requirements for
+                professional accreditation in accounting and apply your
+                knowledge in any number of dynamic industries.
+              </p>
+
+              <h5><b>Potential careers:</b></h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>accountant</li>
+                    <li>banker</li>
+                    <li>entrepreneur</li>
+                    <li>government</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>auditor</li>
+                    <li>business analyst</li>
+                    <li>forensic accountant</li>
+                    <li>policy planner/analyst</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+
+              <table class="table table-borderless">
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Undergraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_commerce.html"
+                        >Bachelor of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_pro_accounting.html"
+                        >Bachelor of Professional Accounting</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tr>
+                  <td><br /></td>
+                </tr>
+
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Postgraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_accounting.html"
+                        >Master of Accounting</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_commerce.html"
+                        >Master of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_pro_accounting.html"
+                        >Master of Professional Accounting</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="bn632-hover bn28"
+              onclick="this.parentElement.style.display='none'; window.location='#courses';"
+            >
+              Close
+            </button>
+          </div>
+          <!-- The Table 1 -->
+
+          <!-- The Table 2 -->
+          <div class="buscontent" id="BAdmin">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="btn-close"
+              id="topright"
+            ></span>
+            <div class="container-fluid">
+              <div id="heading">Business Administration</div>
+
+              <hr />
+
+              <p>
+                The best business administrators are talented at managing both
+                numbers and people.
+              </p>
+              <p>
+                Studying business administration at UOS gives you the skills in
+                accounting, business, ethics, management, marketing and strategy
+                that are key to succeeding in today’s dynamic global business
+                environment.
+              </p>
+
+              <h5><b>Potential careers:</b></h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>business analyst</li>
+                    <li>human resources manager</li>
+                    <li>marketing consultant</li>
+                    <li>recruitment and staff development consultant</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>communications manager</li>
+                    <li>management consultant</li>
+                    <li>public sector manager</li>
+                    <li>sales manager</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+
+              <table class="table table-borderless">
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Undergraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_business.html"
+                        >Bachelor of Business</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_commerce.html"
+                        >Bachelor of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tr>
+                  <td><br /></td>
+                </tr>
+
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Postgraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_business_admin.html"
+                        >Master of Business Administration</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_commerce.html"
+                        >Master of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_eng_management.html"
+                        >Master of Engineering Management</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_management.html"
+                        >Master of Management</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="bn632-hover bn28"
+              onclick="this.parentElement.style.display='none'; window.location='#courses';"
+            >
+              Close
+            </button>
+          </div>
+          <!-- The Table 2 -->
+
+          <!-- The Table 3 -->
+          <div class="buscontent" id="Banaly">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="btn-close"
+              id="topright"
+            ></span>
+            <div class="container-fluid">
+              <div id="heading">Business Analytics</div>
+
+              <hr />
+
+              <p>
+                Big data has become big business, and those with the ability to
+                extract value from these data sources are in demand across the
+                globe.
+              </p>
+              <p>
+                UOS business analytics programs equip you with knowledge and
+                skills to better understand consumers, innovate, reduce risk and
+                maximise opportunities.
+              </p>
+
+              <h5><b>Potential careers:</b></h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>applications modeller and developer</li>
+                    <li>business analyst</li>
+                    <li>business process modelling consultant</li>
+                    <li>data analyst</li>
+                    <li>management consultant</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>behavioural forecasting expert</li>
+                    <li>business process improvement specialist</li>
+                    <li>customer insights manager</li>
+                    <li>IT planning manager</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+              <table class="table table-borderless">
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Undergraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_business_analytics.html"
+                        >Bachelor of Business Analytics</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_commerce.html"
+                        >Bachelor of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tr>
+                  <td><br /></td>
+                </tr>
+
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Postgraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_business_analytics.html"
+                        >Master of Business Analytics</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_commerce.html"
+                        >Master of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="bn632-hover bn28"
+              onclick="this.parentElement.style.display='none'; window.location='#courses';"
+            >
+              Close
+            </button>
+          </div>
+
+          <!-- The Table 3 -->
+
+          <!-- The Table 4 -->
+          <div class="buscontent" id="Commerce">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="btn-close"
+              id="topright"
+            ></span>
+            <div class="container-fluid">
+              <div id="heading">Commerce</div>
+
+              <hr />
+
+              <p>
+                Be successful in today’s complex and fast-moving business
+                environment.
+              </p>
+              <p>
+                Studying commerce at UOS gives you the practical skills and the
+                comprehensive understanding of business functions you need to
+                become an in-demand business professional.
+              </p>
+
+              <h5><b>Potential careers:</b></h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>accountant</li>
+                    <li>business analyst</li>
+                    <li>financial analyst</li>
+                    <li>investment manager</li>
+                    <li>marketing professional</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>auditor</li>
+                    <li>economic policy adviser</li>
+                    <li>human resource manager</li>
+                    <li>market researcher</li>
+                    <li>stockbroker</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+
+              <table class="table table-borderless">
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Undergraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_applied_finance.html"
+                        >Bachelor of Applied Finance</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_business_analytics.html"
+                        >Bachelor of Business Analytics</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_commerce.html"
+                        >Bachelor of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_economics.html"
+                        >Bachelor of Economics</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_marketing_and_media.html"
+                        >Bachelor of Marketing and Media</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_pro_accounting.html"
+                        >Bachelor of Professional Accounting</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tr>
+                  <td><br /></td>
+                </tr>
+
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Postgraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_business_admin.html"
+                        >Master of Business Administration</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_commerce.html"
+                        >Master of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_management.html"
+                        >Master of Management</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_marketing.html"
+                        >Master of Marketing</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="bn632-hover bn28"
+              onclick="this.parentElement.style.display='none'; window.location='#courses';"
+            >
+              Close
+            </button>
+          </div>
+          <!-- The Table 4 -->
+
+          <div class="row" id="business-link">
+            <div class="col">
+              <a
+                class="buslink"
+                onclick="openPage('Economics', this, '#fff')"
+                id="ShowE"
+                >Economics</a
+              >
+            </div>
+            <div class="col">
+              <a
+                class="buslink"
+                onclick="openPage('Finance', this, '#fff')"
+                id="ShowF"
+                >Finance</a
+              >
+            </div>
+            <div class="col">
+              <a
+                class="buslink"
+                onclick="openPage('HR', this, '#fff')"
+                id="ShowG"
+                >Human resources</a
+              >
+            </div>
+            <div class="col">
+              <a
+                class="buslink"
+                onclick="openPage('Marketing', this, '#fff')"
+                id="ShowH"
+                >Marketing</a
+              >
+            </div>
+          </div>
+
+          <!-- The Table 5 -->
+          <div class="buscontent" id="Economics">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="btn-close"
+              id="topright"
+            ></span>
+            <div class="container-fluid">
+              <div id="heading">Economics</div>
+
+              <hr />
+
+              <p>
+                Economic issues underpin our everyday lives. UOS gives you the
+                knowledge needed to navigate today’s complex economic
+                environment.
+              </p>
+              <p>
+                You’ll learn about how modern economies operate, the role of
+                prices and markets in allocating resources, how economies trade
+                and grow, and economic modelling.
+              </p>
+
+              <h5><b>Potential careers:</b></h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>business journalist</li>
+                    <li>economist</li>
+                    <li>investment analyst</li>
+                    <li>stockbroker</li>
+                    <li>planning/policy analyst</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>econometrician</li>
+                    <li>financial analyst</li>
+                    <li>researcher</li>
+                    <li>market analyst</li>
+                    <li>statistician</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+
+              <table class="table table-borderless">
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Undergraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_commerce.html"
+                        >Bachelor of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_economics.html"
+                        >Bachelor of Economics</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tr>
+                  <td><br /></td>
+                </tr>
+
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Postgraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_applied_economics.html"
+                        >Master of Applied Economics</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_commerce.html"
+                        >Master of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="bn632-hover bn28"
+              onclick="this.parentElement.style.display='none'; window.location='#courses';"
+            >
+              Close
+            </button>
+          </div>
+          <!-- The Table 5 -->
+
+          <!-- The Table 6 -->
+          <div class="buscontent" id="Finance">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="btn-close"
+              id="topright"
+            ></span>
+            <div class="container-fluid">
+              <div id="heading">Finance</div>
+
+              <hr />
+
+              <p>
+                On the back of the global financial crisis, finance has never
+                been hotter.
+              </p>
+              <p>
+                UOS finance programs enable you to help organisations create
+                value, invest wisely and control risk. With these skills, you’ll
+                find yourself in demand across the globe.
+              </p>
+
+              <h5><b>Potential careers:</b></h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>financial analyst</li>
+                    <li>investment analyst</li>
+                    <li>planning/policy analyst</li>
+                    <li>public administrator</li>
+                    <li>stockbroker</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>corporate finance</li>
+                    <li>market analyst</li>
+                    <li>wealth management and financial adviser</li>
+                    <li>financial economist</li>
+                    <li>researcher</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+
+              <table class="table table-borderless">
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Undergraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_applied_finance.html"
+                        >Bachelor of Applied Finance</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_commerce.html"
+                        >Bachelor of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tr>
+                  <td><br /></td>
+                </tr>
+
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Postgraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_applied_finance.html"
+                        >Master of Applied Finance</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_banking_and_finance.html"
+                        >Master of Banking and Finance</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_business_admin.html"
+                        >Master of Business Administration</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_commerce.html"
+                        >Master of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_finance.html"
+                        >Master of Finance</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="bn632-hover bn28"
+              onclick="this.parentElement.style.display='none'; window.location='#courses';"
+            >
+              Close
+            </button>
+          </div>
+          <!-- The Table 6 -->
+
+          <!-- The Table 7 -->
+          <div class="buscontent" id="HR">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="btn-close"
+              id="topright"
+            ></span>
+            <div class="container-fluid">
+              <div id="heading">Human Resources</div>
+
+              <hr />
+
+              <p>
+                Managing people effectively is essential if organisations are to
+                establish and maintain a competitive advantage in dynamic
+                environments.
+              </p>
+              <p>
+                With UOS human resources programs, you’ll learn how to establish
+                effective systems for recruitment, selecting candidates,
+                remuneration, training and development, performance appraisal
+                and retention.
+              </p>
+
+              <h5><b>Potential careers:</b></h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>talent manager</li>
+                    <li>change management consultant/change agent</li>
+                    <li>employee relations manager</li>
+                    <li>staff development consultant</li>
+                    <li>work health and safety officer/manager</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>human resources manager</li>
+                    <li>equity and diversity manager</li>
+                    <li>recruitment consultant</li>
+                    <li>human resource policy adviser</li>
+                    <li>learning and development manager</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+
+              <table class="table table-borderless">
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Undergraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_business.html"
+                        >Bachelor of Business</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_commerce.html"
+                        >Bachelor of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tr>
+                  <td><br /></td>
+                </tr>
+
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Postgraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_business_admin.html"
+                        >Master of Business Administration</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_commerce.html"
+                        >Master of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_management.html"
+                        >Master of Management</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="bn632-hover bn28"
+              onclick="this.parentElement.style.display='none'; window.location='#courses';"
+            >
+              Close
+            </button>
+          </div>
+          <!-- The Table 7 -->
+
+          <!-- The Table 8 -->
+          <div class="buscontent" id="Marketing">
+            <span
+              onclick="this.parentElement.style.display='none'"
+              class="btn-close"
+              id="topright"
+            ></span>
+            <div class="container-fluid">
+              <div id="heading">Marketing</div>
+
+              <hr />
+
+              <p>
+                UOS unique blend of marketing strategy, brand management and
+                digital production will set you apart in today’s job market.
+              </p>
+              <p>
+                You’ll learn about the theories modern marketing is built on and
+                have opportunities to hone your practical skills.
+              </p>
+
+              <h5><b>Potential careers:</b></h5>
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul>
+                    <li>advertising manager</li>
+                    <li>brand manager</li>
+                    <li>journalist</li>
+                    <li>product developer</li>
+                    <li>marketing strategist</li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul>
+                    <li>broadcasting production manager</li>
+                    <li>entrepreneur</li>
+                    <li>media and public relations specialist</li>
+                    <li>public affairs adviser</li>
+                    <li>media buyer</li>
+                  </ul>
+                </div>
+              </div>
+              <br />
+
+              <table class="table table-borderless">
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Undergraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_commerce.html"
+                        >Bachelor of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/bachelor_of_marketing_and_media.html"
+                        >Bachelor of Marketing and Media</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+
+                <tr>
+                  <td><br /></td>
+                </tr>
+
+                <thead class="table-info">
+                  <tr>
+                    <th class="p-3">Postgraduate courses</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="p-3">
+                      <a href="./courses/master_of_commerce.html"
+                        >Master of Commerce</a
+                      >
+                    </td>
+                  </tr>
+                  <tr class="table-secondary">
+                    <td class="p-3">
+                      <a href="./courses/master_of_marketing.html"
+                        >Master of Marketing</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button
+              type="button"
+              class="bn632-hover bn28"
+              onclick="this.parentElement.style.display='none'; window.location='#courses';"
+            >
+              Close
+            </button>
+          </div>
+          <!-- The Table 8 -->
+        </div>
+        <br />
+      </div>
+      <div class="container-fluid" id="Enquire">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <br />
+              <h4 class="mt-3 p-3">
+                Prepare for success in business with the latest expert insights
+                and industry experience
+              </h4>
+              <br />
+            </div>
+            <div class="col-md-5 p-3 text-center">
+              <p>
+                Domestic: Call <a href="tel:+95 1 2541 1111">+95 1 2541 1111</a>
+              </p>
+              <p>
+                International: Call
+                <a href="tel:+95 1 2541 1000">+95 1 2541 1000</a>
+              </p>
+              <a
+                href="admission.html"
+                type="button"
+                class="btn btn-lg btn-danger mt-3 p-3"
+                >Find out more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="employability">
+        <h2 class="p-3 text-center">Employability</h2>
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <img src="./assets/img/business-1.png" />
+            <div class="shard"></div>
+            <h4>Flexible study options</h4>
+            <p>
+              At UOS you have the freedom to combine almost any fields of study,
+              giving you a more diverse skill set and expanding your career
+              options. From 2020, you can join your business degree with any of
+              our 50+ undergraduate degrees.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <img src="./assets/img/business-2.png" />
+            <div class="shard"></div>
+            <h4>Industry relevant courses</h4>
+            <p>
+              Develop practical, in-demand accounting or actuarial professional
+              skills while completing your university degree with our
+              Co-operative Education Program. Over the course of a four-year
+              degree, you'll undertake three placements of three to six months
+              each, helping to prepare you for the real-world workplace.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <img
+              class="mx-auto"
+              src="./assets/img/medal.png"
+              alt="icon"
+              loading="lazy"
+              width="100"
+              height="100"
+            />
+            <h3 class="text-center">
+              #1 in Myanmar for ‘teaching quality’ and ‘overall experience’
+              (QILT)
+            </h3>
+            <hr />
+
+            <img
+              class="mx-auto"
+              src="./assets/img/trophy.png"
+              alt="icon"
+              loading="lazy"
+              width="100"
+              height="100"
+            />
+            <h3 class="text-center">
+              Located in the heart of Sam Innovation District
+            </h3>
+            <hr />
+
+            <img
+              class="mx-auto"
+              src="./assets/img/team.png"
+              alt="icon"
+              loading="lazy"
+              width="100"
+              height="100"
+            />
+            <h3 class="text-center">
+              AACSB accredited, internationally recognised business school
+            </h3>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container" id="practical">
+        <h2 class="text-center p-3">Practical learning</h2>
+        <div class="row mt-3">
+          <div class="col-md-6 mt-3 p-3 mx-auto" id="asd">
+            <div class="card mx-auto">
+              <img
+                class="card-img-top"
+                src="./assets/img/business-3.png"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <br />
+              <div class="card-body">
+                <div class="shard"></div>
+                <h4 class="card-title">Real-world, hands-on experience</h4>
+                <br />
+                <p class="card-text">
+                  Our award-winning Professional and Community Engagement (PACE)
+                  program means you'll be able to put your skills into practice
+                  long before you graduate. We facilitate an average of 275
+                  internships for our Business students each year with our 440
+                  industry partners.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-3 p-3 mx-auto">
+            <div class="card mx-auto">
+              <img
+                class="card-img-top"
+                src="./assets/img/business-4.png"
+                alt="Card image"
+                style="width: 100%"
+              />
+              <br />
+              <div class="card-body">
+                <div class="shard"></div>
+                <h4 class="card-title">World-class facilities</h4>
+                <br />
+                <p class="card-text">
+                  You'll have access to state-of-the-arts facilities, including
+                  our award-winning Incubator Hub and access to our new Finance
+                  Decision Lab, a collaborative learning space where you'll
+                  create and share knowledge and solve real problems using
+                  real-time financial data.
+                </p>
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <h2 class="p-3 text-center">What do students say?</h2>
+        <div class="d-flex align-items-center py-5 mh-100">
+          <a
+            class="carousel-control-prev text-decoration-none"
+            href="#mycarousel"
+            role="button"
+            data-bs-slide="prev"
+          >
+            <div
+              class="d-flex flex-column justify-content-center me-2 ms-auto left"
+            >
+              PREV<span class="fas fa-arrow-left"></span>
+            </div>
+            <span class="sr-only">Previous</span>
+          </a>
+          <div class="container">
+            <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+              <ol class="carousel-indicators">
+                <li
+                  data-bs-target="#mycarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></li>
+                <li
+                  data-bs-target="#mycarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></li>
+                <li
+                  data-bs-target="#mycarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <img
+                        src="./assets/img/business-test1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <div
+                        class="d-flex flex-column justify-content-center my-5 px-3"
+                      >
+                        <p class="review text-center">
+                          "I recently completed a business course at the UOS,
+                          and I can't express how transformative the experience
+                          was. The faculty's expertise and the course's
+                          practical approach set it apart."
+                        </p>
+                        <div
+                          class="name d-flex align-items-center justify-content-center"
+                        >
+                          <span class="fas fa-minus pe-1"></span>
+                          <p class="m-0">Angelia Smith</p>
+                        </div>
+                        <p class="job text-center">Bachelor of Commerce</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <img
+                        src="./assets/img/business-test2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <div
+                        class="d-flex flex-column justify-content-center my-5 px-3"
+                      >
+                        <p class="review text-center">
+                          "I highly recommend UOS's business courses to anyone
+                          looking to advance their career or gain a deeper
+                          understanding of the business world. It's an
+                          investment in your future success."
+                        </p>
+                        <div
+                          class="name d-flex align-items-center justify-content-center"
+                        >
+                          <span class="fas fa-minus pe-1"></span>
+                          <p class="m-0">Zayne Styles</p>
+                        </div>
+                        <p class="job text-center">Bachelor of Business</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <img
+                        src="./assets/img/business-test3.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-lg-6">
+                      <div
+                        class="d-flex flex-column justify-content-center my-5 px-3"
+                      >
+                        <p class="review text-center">
+                          "What I appreciated most was the flexibility of the
+                          course. I could balance my studies with my
+                          professional commitments, thanks to the online
+                          learning option. It's a perfect fit for busy
+                          professionals like me."
+                        </p>
+                        <div
+                          class="name d-flex align-items-center justify-content-center"
+                        >
+                          <span class="fas fa-minus pe-1"></span>
+                          <p class="m-0">Christine Mystic</p>
+                        </div>
+                        <p class="job text-center">
+                          Master of Business Administration
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-next text-decoration-none"
+            href="#mycarousel"
+            role="button"
+            data-bs-slide="next"
+          >
+            <div
+              class="d-flex flex-column justify-content-center right ms-2 me-auto"
+            >
+              NEXT <span class="fas fa-arrow-right"></span>
+            </div>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!---------- Faculty of Business  Ends --------->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!---------- Footer  Starts --------->
+    <footer>
+      <div class="footer">
+        <br />
+        <table class="footer__cont">
+          <tr class="footer_header">
+            <td><a class="footer__hlink">Quick links</a></td>
+            <td><a class="footer__hlink">Information for</a></td>
+            <td><a class="footer__hlink">Faculties, schools and college</a></td>
+            <td><a class="footer__hlink">Media</a></td>
+            <td><a class="footer__hlink">Contact us</a></td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="home.html" class="footer__link">Home</a></td>
+            <td>
+              <a href="study.html#intro" class="footer__link"
+                >Future Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_business.html#welcome-business"
+                class="footer__link"
+                >Faculty of Business</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#Exhibition" class="footer__link">Gallery</a>
+            </td>
+            <td>
+              <a href="contact.html" class="footer__link"
+                >Location and contacts</a
+              >
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="find_course.html#intro" class="footer__link"
+                >Find a course</a
+              >
+            </td>
+            <td>
+              <a href="international.html" class="footer__link"
+                >International Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_health.html#welcome-health"
+                class="footer__link"
+                >Faculty of Health</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#events" class="footer__link">Events</a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="how_to_apply.html#intro" class="footer__link"
+                >How to apply</a
+              >
+            </td>
+            <td>
+              <a href="recognition.html" class="footer__link"
+                >Recognition of Prior Learning</a
+              >
+            </td>
+            <td>
+              <a href="faculty_of_science.html#wahaha" class="footer__link"
+                >Faculty of Science and Engineering</a
+              >
+            </td>
+            <td><a href="news.html#news" class="footer__link">News</a></td>
+            <td>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCrcNBJstILOoDvFMM1CmXIQ"
+                class="footer__icon"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="admission.html" class="footer__link">Admission</a></td>
+            <td>
+              <a href="scholarship.html#intro" class="footer__link"
+                >Scholarships</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="footer__copy">&copy; Copyright UOS. All Rights Reserved</p>
+    </footer>
+    <!---------- Footer Ends --------->
+
+    <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      //Top Button
+      let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        if (pos > 100) {
+          scrollProgress.style.display = "grid";
+        } else {
+          scrollProgress.style.display = "none";
+        }
+        scrollProgress.addEventListener("click", () => {
+          document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#16a7e0 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      };
+      window.onscroll = calcScrollValue;
+      window.onload = calcScrollValue;
+    </script>
+
+    <script>
+      function openSearch() {
+        document.getElementById("Searchbox").style.display = "block";
+      }
+
+      // Close the full screen search box
+      function closeSearch() {
+        document.getElementById("Searchbox").style.display = "none";
+      }
+
+      const sub = document.getElementById("sub"); //get the form id
+      const input = document.getElementById("searchInput"); //get the search input id
+      const searchList = document.getElementById("searchList"); //get the search list where you want your searched item to display
+
+      //search the info.json file and filter it in the search box to appear when searched
+      const searchInfo = async (searchJson) => {
+        //am using Es6 arrow function here
+
+        const response = await fetch("./assets/js/info.json"); //get the json file into your javascript
+
+        const info = await response.json(); //add the .json to the file to make it into a json in the javascript
+
+        //make the searched term in the search box to match what is in the json file and filter it
+        let list = info.filter((infos) => {
+          const infoReg = new RegExp(`^${searchJson}`, "gi"); //the ^ in the REgExp means that only the first letter of the searched value will searched eg i want money to be searched by the first m not the other letters in it
+
+          //the 'gi' above means you can search with both uppercase and lowercase letter and still get the same search value
+
+          return infos.name.match(infoReg); //return what you what the json file to be searched with
+          //as for me i want it to be searched with the name but you can choose anything you want either searched with url or number
+        });
+
+        //how to check if there is no value in the search box and if there is none then don't show anything
+        if (searchJson.length == 0) {
+          list = [];
+          searchList.innerHTML = ""; //makes the info searched to be removed if there is no searched term/word in the input
+        }
+
+        //call the outputInfo function inside the here
+        outputInfo(list);
+      };
+
+      //creating what will be be displayed when you type in your search
+      const outputInfo = (list) => {
+        if (list.length > 0) {
+          //add the search value you want to show when you search the page
+          const inputValue = list
+            .map(
+              (info) => `
+         <div class="card card-body p-3" style="background: #eee;">
+                <h3 class="text-start"><a href="${info.url}" target="_self" id="search-link">${info.name}</a></h3>
+            </div>
+    `
+            )
+            .join("");
+          // add the searched value(inputValue) to the div in index.html (searchList)
+          searchList.innerHTML = inputValue;
+        }
+      };
+
+      // add Eventlistener to the input
+      sub.addEventListener("input", (e) => {
+        //    e.preventDefault(); //stop it from actually submiting the file
+
+        searchInfo(input.value); //
+
+        //    input.value = ''; //after searching remove the value in the input
+      });
+    </script>
+  </body>
+</html>

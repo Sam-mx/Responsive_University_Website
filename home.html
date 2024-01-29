@@ -1,0 +1,2039 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | University of Sam</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/uos-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Owl Carousel-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav_header" id="nav_head">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="./php/staff.php" class="nav__hlink">Staff</a>
+        <a href="international.html" class="nav__hlink">International</a>
+        <a href="alumni.html#alumni-welcome" class="nav__hlink">Alumni</a>
+        <a href="news.html#news" class="nav__hlink">News</a>
+        <a href="admission.html" class="nav__hlink">Admission</a>
+        <a href="contact.html" class="nav__hlink">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Logo Section -->
+    <div class="Logo__Sector">
+      <div class="Logo__img">
+        <a href="home.html">
+          <img src="./assets/img/Logo.png" alt="" />
+        </a>
+      </div>
+      <button class="openBtn" onclick="openSearch()">
+        <i class="fas fa-search fa-2x" style="color: #000000"></i>
+      </button>
+    </div>
+
+    <div id="Searchbox" class="Searchbox">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >x</span
+      >
+      <div class="Searchbox-content">
+        <h2 class="mb-3 p-3 text-light">Search Everything Here</h2>
+        <form id="sub">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            id="searchInput"
+          />
+          <div id="searchList"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Navigation Bars -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__dropdownitem">
+          <a href="study.html#intro" class="nav__link">Study</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="8"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="study.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="find_course.html#intro" class="header__link"
+                  >FIND A COURSE</a
+                >
+              </td>
+              <td>
+                <a href="study.html#info" class="header__link"
+                  >INFORMATION FOR</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="business.html#courses" class="nav__ddlink">Business</a>
+              </td>
+              <td>
+                <a href="undergraduate.html#intro" class="nav__ddlink"
+                  >Undergraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="engineering.html#courses" class="nav__ddlink"
+                  >Engineering</a
+                >
+              </td>
+              <td>
+                <a href="postgraduate.html#intro" class="nav__ddlink"
+                  >Postgraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="health.html#courses" class="nav__ddlink">Health</a>
+              </td>
+              <td>
+                <a href="international.html" class="nav__ddlink"
+                  >International Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a
+                  href="information_technology.html#courses"
+                  class="nav__ddlink"
+                  >Information Technology</a
+                >
+              </td>
+              <td>
+                <a href="entry_requirement.html" class="nav__ddlink"
+                  >Entry Requirements</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="security.html#courses" class="nav__ddlink"
+                  >Security, intelligence and criminology</a
+                >
+              </td>
+              <td>
+                <a href="fees.html#intro" class="nav__ddlink">Fees and costs</a>
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="curstudent.html#intro" class="nav__link">Current Students</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="3">
+                <a href="curstudent.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="curstudent.html#oppo" class="header__link"
+                  >OPPORTUNITIES</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#support" class="header__link"
+                  >SUPPORT</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#life" class="header__link"
+                  >Life at UOS</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="scholarship.html#intro" class="nav__ddlink"
+                  >Scholarships</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#access" class="nav__ddlink"
+                  >Accessibility service</a
+                >
+              </td>
+              <td>
+                <a href="./php/student.php" class="nav__ddlink"
+                  >Student Portal</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#global" class="nav__ddlink"
+                  >Global opportunities</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#academic" class="nav__ddlink"
+                  >Academic support</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="nav__ddlink">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#career" class="nav__ddlink"
+                  >Career development</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#health" class="nav__ddlink"
+                  >Health and wellbeing</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="gallery.html#Exhibition" class="nav__link">Gallery</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="6"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="gallery.html#Exhibition" class="nav__ddlink"
+                  >Overview</a
+                >
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="gallery.html#Exhibition" class="header__link"
+                  >Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="header__link">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#current" class="nav__ddlink"
+                  >Current Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#sports" class="nav__ddlink">Sports</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#future" class="nav__ddlink"
+                  >Upcoming Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#activities" class="nav__ddlink"
+                  >Activities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#past" class="nav__ddlink"
+                  >Past Exhibitions</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="about.html#intro" class="nav__link">About Us</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+            <tr class="overview">
+              <td colspan="3">
+                <a href="about.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="university.html#facilities__about" class="header__link"
+                  >About UOS</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#service" class="header__link"
+                  >Campus Services</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#intro" class="header__link"
+                  >Facilities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="university.html#vision" class="nav__ddlink"
+                  >Vision and strategy</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#student" class="nav__ddlink"
+                  >Students life and support</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#library" class="nav__ddlink"
+                  >Library</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="campus.html#intro" class="nav__ddlink">Our campus</a>
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Campus security</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#cafe" class="nav__ddlink"
+                  >Café, bar and restaurant</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="faculties.html#intro" class="nav__ddlink"
+                  >Our faculties</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Children and youth</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="contact.html" class="nav__ddlink"
+                  >Location and contacts</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Home-->
+    <!--Image sliders-->
+
+    <div class="slideshow-container">
+      <div class="mySlides">
+        <img src="./assets/img/slide1.jpg" style="width: 100%" />
+        <div class="text_container">
+          <div class="text">
+            <h2>Welcome to the<bold> University of Sam (UOS)</bold></h2>
+            <p>
+              <a href="#study" class="btn">Get Started Now</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <img src="./assets/img/slide2.jpg" style="width: 100%" />
+        <div class="text_container">
+          <div class="text">
+            <h2>Applications are now open</h2>
+            <p>Join us for Undergraduate & Postgraduate Programs</p>
+            <a href="study.html" class="btn">Get Started Now</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+
+    <!--Study Area-->
+    <div class="study" id="study">
+      <div class="study-con">
+        <div class="study-card">
+          <figure class="study-card__thumb">
+            <img
+              src="./assets/img/home-1.png"
+              alt="Picture by David Monje"
+              class="study-card__image"
+            />
+            <figcaption class="study-card__caption">
+              <h2 class="study-card__title">Study with UOS</h2>
+              <p class="study-card__snippet">
+                UOS undergraduate and postgraduate courses can help you invent
+                your next move.
+              </p>
+              <a href="study.html#intro" class="study-card__button"
+                >Explore course areas</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="study-card">
+          <figure class="study-card__thumb">
+            <img
+              src="./assets/img/home-2.png"
+              alt="Picture by Nathan Dumlao"
+              class="study-card__image"
+            />
+            <figcaption class="study-card__caption">
+              <h2 class="study-card__title">World-class Faculties</h2>
+              <p class="study-card__snippet">
+                Our faculties are home to a passionate community of scholars
+                committed to serving students and engaging the community through
+                transformative education and world-leading research.
+              </p>
+              <a href="faculties.html#intro" class="study-card__button"
+                >Explore our faculties</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="study-card">
+          <figure class="study-card__thumb">
+            <img
+              src="./assets/img/home-3.png"
+              alt="Picture by Daniel Lincoln"
+              class="study-card__image"
+            />
+            <figcaption class="study-card__caption">
+              <h2 class="study-card__title">Join UOS Alumni</h2>
+              <p class="study-card__snippet">
+                The UOS community is a global network of future-focused game
+                changers who value education, innovation and positive impact.
+                Explore how you can stay connected or get involved with the UOS
+                community today.
+              </p>
+              <a href="alumni.html#alumni-welcome" class="study-card__button"
+                >Learn more about us</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="oweroer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <h4 class="mt-3 p-3">
+              We can help you select the course that best matches your career
+              goals
+            </h4>
+            <br />
+          </div>
+          <div class="col-md-2 text-center p-3">
+            <a
+              href="admission.html"
+              type="button"
+              class="btn btn-lg btn-danger p-3"
+              >Enquire now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---- Why UOS--->
+    <div class="Why">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="choose__desc">
+            <div class="shard"></div>
+            <h2>Choose UOS</h2>
+            <p>
+              Discover why UOS is a top 5 student city in Myanmar according to
+              QS Best Student Cities Index 2024.
+            </p>
+            <a class="clearing__btn" href="about.html"
+              ><button class="mtxl">
+                Reasons to choose UOS<i
+                  class="bx bx-right-arrow-alt"
+                ></i></button
+            ></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="choose__icons">
+            <div class="choose__reasons">
+              <div class="shard"></div>
+              <div>
+                <img
+                  class="choose__icon"
+                  src="./assets/img/medal.png"
+                  alt="icon"
+                  loading="lazy"
+                  width="118"
+                  height="118"
+                />
+              </div>
+              <div class="label">
+                <h3>Ranked among the top 1% of universities in the world</h3>
+                <p class="ptm">National Student Survey (NSS) 2023</p>
+              </div>
+            </div>
+
+            <div class="choose__reasons">
+              <div>
+                <img
+                  class="choose__icon"
+                  src="./assets/img/stars.png"
+                  alt="icon"
+                  loading="lazy"
+                  width="118"
+                  height="118"
+                />
+              </div>
+              <div class="label">
+                <h3>
+                  3 subjects ranked in the top 50 globally and 7 in the top 100
+                </h3>
+                <p class="ptm">QS Stars University Rankings by subject, 2023</p>
+              </div>
+            </div>
+            <div class="choose__reasons">
+              <div>
+                <img
+                  class="choose__icon"
+                  src="./assets/img/location.png"
+                  alt="icon"
+                  loading="lazy"
+                  width="118"
+                  height="118"
+                />
+              </div>
+              <div class="label">
+                <h3>Top 3 Student City in Myanmar for Affordability</h3>
+                <p class="ptm">
+                  QS Best Student Cities Index Ranking Indicators 2024
+                </p>
+              </div>
+            </div>
+
+            <div class="choose__reasons">
+              <div>
+                <img
+                  class="choose__icon"
+                  src="./assets/img/group.png"
+                  alt="career support icon"
+                  loading="lazy"
+                  width="118"
+                  height="118"
+                />
+              </div>
+              <div class="label">
+                <h3>
+                  300+ industry partners on campus and within our innovation
+                  precinct
+                </h3>
+                <p class="ptm">UOS Community</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- News-->
+    <div class="news">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div id="news-slider" class="owl-carousel">
+              <!-- 1 -->
+              <div class="news-grid">
+                <div class="news-grid-image">
+                  <img src="./assets/img/news1.jpg" alt="" />
+                  <div class="news-grid-box">
+                    <h1>4</h1>
+                    <p>Oct</p>
+                  </div>
+                </div>
+                <div class="news-grid-txt">
+                  <span>Robotics</span>
+                  <h2>Finger-shaped sensor enables more dexterous robots</h2>
+                  <ul>
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i> Oct 04,
+                      2023
+                    </li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+                  </ul>
+                  <p>
+                    Imagine grasping a heavy object, like a pipe wrench, with
+                    one hand. You would likely grab the wrench using your entire
+                    fingers, not just your fingertips. Sensory receptors,...
+                  </p>
+                  <a data-bs-toggle="modal" data-bs-target="#myModal1"
+                    >Read More...</a
+                  >
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="news-grid">
+                <div class="news-grid-image">
+                  <img src="./assets/img/news2.jpg" alt="" />
+                  <div class="news-grid-box">
+                    <h1>2</h1>
+                    <p>Oct</p>
+                  </div>
+                </div>
+                <div class="news-grid-txt">
+                  <span>Computer Science</span>
+                  <h2>
+                    A more effective experimental design for engineering a cell
+                  </h2>
+                  <ul>
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i> Oct 02,
+                      2023
+                    </li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+                  </ul>
+                  <p>
+                    By focusing on causal relationships in genome regulation, a
+                    new AI method could help scientists identify new
+                    immunotherapy techniques or regenerative therapies.
+                  </p>
+                  <a data-bs-toggle="modal" data-bs-target="#myModal2"
+                    >Read More...</a
+                  >
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="news-grid">
+                <div class="news-grid-image">
+                  <img src="./assets/img/news3.jpg" alt="" />
+                  <div class="news-grid-box">
+                    <h1>6</h1>
+                    <p>Oct</p>
+                  </div>
+                </div>
+                <div class="news-grid-txt">
+                  <span>Robotics</span>
+                  <h2>A 130g soft robot gripper that can lift 100kg</h2>
+                  <ul>
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i> Oct 06,
+                      2023
+                    </li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+                  </ul>
+                  <p>
+                    Utilizing soft, flexible materials such as cloth, paper, and
+                    silicone, soft robotic grippers act like a robot's hand to
+                    perform functions such as safely grasping and releasing
+                    objects,...
+                  </p>
+                  <a data-bs-toggle="modal" data-bs-target="#myModal3"
+                    >Read More...</a
+                  >
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="news-grid">
+                <div class="news-grid-image">
+                  <img src="./assets/img/news4.jpg" alt="" />
+                  <div class="news-grid-box">
+                    <h1>17</h1>
+                    <p>Aug</p>
+                  </div>
+                </div>
+                <div class="news-grid-txt">
+                  <span>Business</span>
+                  <h2>7 Rules to Follow for a Successful Internship</h2>
+                  <ul>
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i> Aug 17,
+                      2023
+                    </li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+                  </ul>
+                  <p>
+                    Internships are such an important part of the college
+                    experience, as these work opportunities not only help you
+                    gain more experience, develop specific skills,...
+                  </p>
+                  <a data-bs-toggle="modal" data-bs-target="#myModal4"
+                    >Read More...</a
+                  >
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="news-grid">
+                <div class="news-grid-image">
+                  <img src="./assets/img/news5.jpg" alt="" />
+                  <div class="news-grid-box">
+                    <h1>6</h1>
+                    <p>Feb</p>
+                  </div>
+                </div>
+                <div class="news-grid-txt">
+                  <span>Health</span>
+                  <h2>Knee Injections for Osteoarthritis Pain Relief</h2>
+                  <ul>
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i> Feb 06,
+                      2023
+                    </li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+                  </ul>
+                  <p>
+                    Are steroid injections the best option for osteoarthritis
+                    knee pain relief? Studies show that knee injections may
+                    cause long term issues.
+                  </p>
+                  <a data-bs-toggle="modal" data-bs-target="#myModal5"
+                    >Read More...</a
+                  >
+                </div>
+              </div>
+              <!-- 6 -->
+              <div class="news-grid">
+                <div class="news-grid-image">
+                  <img src="./assets/img/news6.png" alt="" />
+                  <div class="news-grid-box">
+                    <h1>3</h1>
+                    <p>Oct</p>
+                  </div>
+                </div>
+                <div class="news-grid-txt">
+                  <span>Science</span>
+                  <h2>
+                    AI copilot enhances human precision for safer aviation
+                  </h2>
+                  <ul>
+                    <li>
+                      <i class="fa fa-calendar" aria-hidden="true"></i> Oct 03,
+                      2023
+                    </li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> Admin</li>
+                  </ul>
+                  <p>
+                    Designed to ensure safer skies, “Air-Guardian” blends human
+                    intuition with machine precision, creating a more symbiotic
+                    relationship between pilot and aircraft.
+                  </p>
+                  <a data-bs-toggle="modal" data-bs-target="#myModal6"
+                    >Read More...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!-- The Modal 1 -->
+    <div class="modal fade" id="myModal1">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Finger-shaped sensor enables more dexterous robots
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p><span>OCTOBER 4, 2023</span></p>
+            <h3>Finger-shaped sensor enables more dexterous robots</h3>
+            <p>
+              <span>by Adam Zewe, Massachusetts Institute of Technology</span>
+            </p>
+            <img src="./assets/img/news1.jpg" alt="" />
+            <p>
+              Imagine grasping a heavy object, like a pipe wrench, with one
+              hand. You would likely grab the wrench using your entire fingers,
+              not just your fingertips. Sensory receptors in your skin, which
+              run along the entire length of each finger, would send information
+              to your brain about the tool you are grasping.
+            </p>
+            <p>
+              In a robotic hand, tactile sensors that use cameras to obtain
+              information about grasped objects are small and flat, so they are
+              often located in the fingertips. These robots, in turn, use only
+              their fingertips to grasp objects, typically with a pinching
+              motion. This limits the manipulation tasks they can perform.
+            </p>
+
+            <p>
+              MIT researchers have developed a camera-based touch sensor that is
+              long, curved, and shaped like a human finger. Their device
+              provides high-resolution tactile sensing over a large area. The
+              sensor, called the GelSight Svelte, uses two mirrors to reflect
+              and refract light so that one camera, located in the base of the
+              sensor, can see along the entire finger's length. The work has
+              been published on the pre-print server arXiv.
+            </p>
+            <p>
+              In addition, the researchers built the finger-shaped sensor with a
+              flexible backbone. By measuring how the backbone bends when the
+              finger touches an object, they can estimate the force being placed
+              on the sensor.
+            </p>
+            <p>
+              They used GelSight Svelte sensors to produce a robotic hand that
+              was able to grasp a heavy object like a human would, using the
+              entire sensing area of all three of its fingers. The hand could
+              also perform the same pinch grasps common to traditional robotic
+              grippers.
+            </p>
+            <p>
+              "Because our new sensor is human finger-shaped, we can use it to
+              do different types of grasps for different tasks, instead of using
+              pinch grasps for everything. There's only so much you can do with
+              a parallel jaw gripper. Our sensor really opens up some new
+              possibilities on different manipulation tasks we could do with
+              robots," says Alan (Jialiang) Zhao, a mechanical engineering
+              graduate student and lead author of a paper on GelSight Svelte.
+            </p>
+            <p>
+              Zhao wrote the paper with senior author Edward Adelson, the John
+              and Dorothy Wilson Professor of Vision Science in the Department
+              of Brain and Cognitive Sciences and a member of the Computer
+              Science and Artificial Intelligence Laboratory (CSAIL). The
+              research will be presented at the IEEE Conference on Intelligent
+              Robots and Systems.
+            </p>
+            <p>
+              Cameras used in tactile sensors are limited by their size, the
+              focal distance of their lenses, and their viewing angles.
+              Therefore, these tactile sensors tend to be small and flat, which
+              confines them to a robot's fingertips.
+            </p>
+            <p>
+              With a longer sensing area, one that more closely resembles a
+              human finger, the camera would need to sit farther from the
+              sensing surface to see the entire area. This is particularly
+              challenging due to size and shape restrictions of a robotic
+              gripper.
+            </p>
+            <p>
+              Zhao and Adelson solved this problem using two mirrors that
+              reflect and refract light toward a single camera located at the
+              base of the finger.
+            </p>
+            <p>
+              GelSight Svelte incorporates one flat, angled mirror that sits
+              across from the camera and one long, curved mirror that sits along
+              the back of the sensor. These mirrors redistribute light rays from
+              the camera in such a way that the camera can see the along the
+              entire finger's length.
+            </p>
+            <p>
+              To optimize the shape, angle, and curvature of the mirrors, the
+              researchers designed software to simulate reflection and
+              refraction of light.
+            </p>
+            <p>
+              "With this software, we can easily play around with where the
+              mirrors are located and how they are curved to get a sense of how
+              well the image will look after we actually make the sensor," Zhao
+              explains.
+            </p>
+            <p>
+              The mirrors, camera, and two sets of LEDs for illumination are
+              attached to a plastic backbone and encased in a flexible skin made
+              from silicone gel. The camera views the back of the skin from the
+              inside; based on the deformation, it can see where contact occurs
+              and measure the geometry of the object's contact surface.
+            </p>
+            <p>
+              In addition, the red and green LED arrays give a sense of how
+              deeply the gel is being pressed down when an object is grasped,
+              due to the saturation of color at different locations on the
+              sensor.
+            </p>
+            <p>
+              The researchers can use this color saturation information to
+              reconstruct a 3D depth image of the object being grasped.
+            </p>
+            <p>
+              The sensor's plastic backbone enables it to determine
+              proprioceptive information, such as the twisting torques applied
+              to the finger. The backbone bends and flexes when an object is
+              grasped. The researchers use machine learning to estimate how much
+              force is being applied to the sensor, based on these backbone
+              deformations.
+            </p>
+            <p>
+              However, combining these elements into a working sensor was no
+              easy task, Zhao says.
+            </p>
+            <p>
+              "Making sure you have the correct curvature for the mirror to
+              match what we have in simulation is pretty challenging. Plus, I
+              realized there are some kinds of superglue that inhibit the curing
+              of silicon. It took a lot of experiments to make a sensor that
+              actually works," he adds.
+            </p>
+            <p>
+              This gif shows a robotic hand that incorporates three,
+              finger-shaped GelSight Svelte sensors. The sensors, which provide
+              high-resolution tactile sensing over a large area, enable the hand
+              to perform multiple grasps, including pinch grasps that use only
+              the fingertips and a power grasp that uses the entire sensing area
+              of all three fingers. Credit: Massachusetts Institute of
+              Technology
+            </p>
+            <h4>Versatile grasping</h4>
+            <p>
+              Once they had perfected the design, the researchers tested the
+              GelSight Svelte by pressing objects, like a screw, to different
+              locations on the sensor to check image clarity and see how well it
+              could determine the shape of the object.
+            </p>
+            <p>
+              They also used three sensors to build a GelSight Svelte hand that
+              can perform multiple grasps, including a pinch grasp, lateral
+              pinch grasp, and a power grasp that uses the entire sensing area
+              of the three fingers. Most robotic hands, which are shaped like
+              parallel jaw drippers, can only perform pinch grasps.
+            </p>
+            <p>
+              A three-finger power grasp enables a robotic hand to hold a
+              heavier object more stably. However, pinch grasps are still useful
+              when an object is very small. Being able to perform both types of
+              grasps with one hand would give a robot more versatility, he says.
+            </p>
+            <p>
+              Moving forward, the researchers plan to enhance the GelSight
+              Svelte so the sensor is articulated and can bend at the joints,
+              more like a human finger.
+            </p>
+            <p>
+              "Optical-tactile finger sensors allow robots to use inexpensive
+              cameras to collect high-resolution images of surface contact, and
+              by observing the deformation of a flexible surface the robot
+              estimates the contact shape and forces applied. This work
+              represents an advancement on the GelSight finger design, with
+              improvements in full-finger coverage and the ability to
+              approximate bending deflection torques using image differences and
+              machine learning," says Monroe Kennedy III, assistant professor of
+              mechanical engineering at Stanford University, who was not
+              involved with this research.
+            </p>
+            <p>
+              "Improving a robot's sense of touch to approach human ability is a
+              necessity and perhaps the catalyst problem for developing robots
+              capable of working on complex, dexterous tasks."
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal 1 -->
+
+    <!-- The Modal 2 -->
+    <div class="modal fade" id="myModal2">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              A more effective experimental design for engineering a cell into a
+              new state
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h3>
+              A more effective experimental design for engineering a cell into a
+              new state
+            </h3>
+            <p>
+              By focusing on causal relationships in genome regulation, a new AI
+              method could help scientists identify new immunotherapy techniques
+              or regenerative therapies.
+            </p>
+            <p><span>Adam Zewe | MIT News</span></p>
+            <p><span>October 2, 2023</span></p>
+            <img src="./assets/img/news2.jpg" alt="" />
+            <p>
+              A strategy for cellular reprogramming involves using targeted
+              genetic interventions to engineer a cell into a new state. The
+              technique holds great promise in immunotherapy, for instance,
+              where researchers could reprogram a patient’s T-cells so they are
+              more potent cancer killers. Someday, the approach could also help
+              identify life-saving cancer treatments or regenerative therapies
+              that repair disease-ravaged organs.
+            </p>
+            <p>
+              But the human body has about 20,000 genes, and a genetic
+              perturbation could be on a combination of genes or on any of the
+              over 1,000 transcription factors that regulate the genes. Because
+              the search space is vast and genetic experiments are costly,
+              scientists often struggle to find the ideal perturbation for their
+              particular application.
+            </p>
+            <p>
+              Researchers from MIT and Harvard University developed a new,
+              computational approach that can efficiently identify optimal
+              genetic perturbations based on a much smaller number of
+              experiments than traditional methods.
+            </p>
+            <p>
+              Their algorithmic technique leverages the cause-and-effect
+              relationship between factors in a complex system, such as genome
+              regulation, to prioritize the best intervention in each round of
+              sequential experiments.
+            </p>
+            <p>
+              The researchers conducted a rigorous theoretical analysis to
+              determine that their technique did, indeed, identify optimal
+              interventions. With that theoretical framework in place, they
+              applied the algorithms to real biological data designed to mimic a
+              cellular reprogramming experiment. Their algorithms were the most
+              efficient and effective.
+            </p>
+            <p>
+              “Too often, large-scale experiments are designed empirically. A
+              careful causal framework for sequential experimentation may allow
+              identifying optimal interventions with fewer trials, thereby
+              reducing experimental costs,” says co-senior author Caroline
+              Uhler, a professor in the Department of Electrical Engineering and
+              Computer Science (EECS) who is also co-director of the Eric and
+              Wendy Schmidt Center at the Broad Institute of MIT and Harvard,
+              and a researcher at MIT’s Laboratory for Information and Decision
+              Systems (LIDS) and Institute for Data, Systems and Society (IDSS).
+            </p>
+            <p>
+              Joining Uhler on the paper, which appears today in Nature Machine
+              Intelligence, are lead author Jiaqi Zhang, a graduate student and
+              Eric and Wendy Schmidt Center Fellow; co-senior author
+              Themistoklis P. Sapsis, professor of mechanical and ocean
+              engineering at MIT and a member of IDSS; and others at Harvard and
+              MIT.
+            </p>
+            <h4>Active learning</h4>
+            <p>
+              When scientists try to design an effective intervention for a
+              complex system, like in cellular reprogramming, they often perform
+              experiments sequentially. Such settings are ideally suited for the
+              use of a machine-learning approach called active learning. Data
+              samples are collected and used to learn a model of the system that
+              incorporates the knowledge gathered so far. From this model, an
+              acquisition function is designed — an equation that evaluates all
+              potential interventions and picks the best one to test in the next
+              trial.
+            </p>
+            <p>
+              This process is repeated until an optimal intervention is
+              identified (or resources to fund subsequent experiments run out).
+            </p>
+            <p>
+              “While there are several generic acquisition functions to
+              sequentially design experiments, these are not effective for
+              problems of such complexity, leading to very slow convergence,”
+              Sapsis explains.
+            </p>
+            <p>
+              Acquisition functions typically consider correlation between
+              factors, such as which genes are co-expressed. But focusing only
+              on correlation ignores the regulatory relationships or causal
+              structure of the system. For instance, a genetic intervention can
+              only affect the expression of downstream genes, but a
+              correlation-based approach would not be able to distinguish
+              between genes that are upstream or downstream.
+            </p>
+            <p>
+              “You can learn some of this causal knowledge from the data and use
+              that to design an intervention more efficiently,” Zhang explains.
+            </p>
+            <p>
+              The MIT and Harvard researchers leveraged this underlying causal
+              structure for their technique. First, they carefully constructed
+              an algorithm so it can only learn models of the system that
+              account for causal relationships.
+            </p>
+            <p>
+              Then the researchers designed the acquisition function so it
+              automatically evaluates interventions using information on these
+              causal relationships. They crafted this function so it prioritizes
+              the most informative interventions, meaning those most likely to
+              lead to the optimal intervention in subsequent experiments.
+            </p>
+            <p>
+              “By considering causal models instead of correlation-based models,
+              we can already rule out certain interventions. Then, whenever you
+              get new data, you can learn a more accurate causal model and
+              thereby further shrink the space of interventions,” Uhler
+              explains.
+            </p>
+            <p>
+              This smaller search space, coupled with the acquisition function’s
+              special focus on the most informative interventions, is what makes
+              their approach so efficient.
+            </p>
+            <p>
+              The researchers further improved their acquisition function using
+              a technique known as output weighting, inspired by the study of
+              extreme events in complex systems. This method carefully
+              emphasizes interventions that are likely to be closer to the
+              optimal intervention.
+            </p>
+            <p>
+              “Essentially, we view an optimal intervention as an ‘extreme
+              event’ within the space of all possible, suboptimal interventions
+              and use some of the ideas we have developed for these problems,”
+              Sapsis says.
+            </p>
+            <h4>Enhanced efficiency</h4>
+            <p>
+              They tested their algorithms using real biological data in a
+              simulated cellular reprogramming experiment. For this test, they
+              sought a genetic perturbation that would result in a desired shift
+              in average gene expression. Their acquisition functions
+              consistently identified better interventions than baseline methods
+              through every step in the multi-stage experiment.
+            </p>
+            <p>
+              “If you cut the experiment off at any stage, ours would still be
+              more efficient than the baselines. This means you could run fewer
+              experiments and get the same or better results,” Zhang says.
+            </p>
+            <p>
+              The researchers are currently working with experimentalists to
+              apply their technique toward cellular reprogramming in the lab.
+            </p>
+            <p>
+              Their approach could also be applied to problems outside genomics,
+              such as identifying optimal prices for consumer products or
+              enabling optimal feedback control in fluid mechanics applications.
+            </p>
+            <p>
+              In the future, they plan to enhance their technique for
+              optimizations beyond those that seek to match a desired mean. In
+              addition, their method assumes that scientists already understand
+              the causal relationships in their system, but future work could
+              explore how to use AI to learn that information, as well.
+            </p>
+            <p>
+              This work was funded, in part, by the Office of Naval Research,
+              the MIT-IBM Watson AI Lab, the MIT J-Clinic for Machine Learning
+              and Health, the Eric and Wendy Schmidt Center at the Broad
+              Institute, a Simons Investigator Award, the Air Force Office of
+              Scientific Research, and a National Science Foundation Graduate
+              Fellowship.
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal 2 -->
+
+    <!-- The Modal 3 -->
+    <div class="modal fade" id="myModal3">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              A 130g soft robot gripper that can lift 100kg
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p><span>OCTOBER 6, 2023</span></p>
+            <h3>A 130g soft robot gripper that can lift 100kg</h3>
+            <p><span>by Korea Institute of Science and Technology</span></p>
+            <img src="./assets/img/news3.jpg" alt="" />
+            <p>
+              Utilizing soft, flexible materials such as cloth, paper, and
+              silicone, soft robotic grippers act like a robot's hand to perform
+              functions such as safely grasping and releasing objects. Unlike
+              conventional rigid material grippers, they are more flexible and
+              safe, and are being researched for household robots that handle
+              fragile objects such as eggs, or for logistics robots that need to
+              carry various types of objects. However, its low load capacity
+              makes it difficult to lift heavy objects, and its poor grasping
+              stability makes it easy to lose the object even under mild
+              external impact.
+            </p>
+            <p>
+              Dr. Song, Kahye of the Intelligent Robotics Research Center at the
+              Korea Advanced Institute of Science and Technology (KIST), along
+              with Professor Lee, Dae-Young of the Department of Aerospace
+              Engineering at the Korea Advanced Institute of Science and
+              Technology (KAIST), have jointly developed a soft gripper with a
+              woven structure that can grip objects weighing more than 100 kg
+              with 130 grams of material.
+            </p>
+            <p>
+              The results of the study were published on August 2 in
+              <i>Nature Communications</i>.
+            </p>
+            <p>
+              To increase the loading capacity of the soft robot gripper, the
+              research team applied a new structure inspired by textiles, as
+              opposed to the conventional method of developing new materials or
+              reinforcing the structure.
+            </p>
+            <p>
+              The weaving technique they focused on involves tightly
+              intertwining individual threads to create a strong fabric, which
+              can reliably support heavy objects and has been used for centuries
+              in clothing, bags, and industrial textiles. The team used thin PET
+              plastic. The grippers were designed to allow the strips to
+              intertwine and unwind into a woven structure.
+            </p>
+            <p>
+              The resulting woven gripper weighs 130 grams and can grip an
+              object weighing 100 kilograms. Conventional grippers of the same
+              weight can lift no more than 20 kilograms at most, and considering
+              that a gripper that can lift the same weight weighs 100 kilograms,
+              the team succeeded in increasing the load capacity relative to its
+              own weight.
+            </p>
+            <p>
+              Also, the soft robot gripper developed by the research team uses
+              plastic, which costs only a few thousand won (approx. $2) per unit
+              of material, and can be used as a universal gripper that can grip
+              objects of various shapes and weights, making it highly
+              competitive in price. In addition, since the soft robot gripper
+              can be manufactured by simply fastening a plastic strip, the
+              manufacturing process can be completed in less than 10 minutes,
+              and it is easy to replace and maintain, so the process efficiency
+              is excellent.
+            </p>
+            <p>
+              In addition to PET, which is the main material used by the
+              research team, the gripper can also be made of various materials
+              such as rubber and compounds that possess elasticity, allowing the
+              team to customize and utilize grippers suitable for industrial and
+              logistics sites that require strong gripping performance or
+              various environments that need to withstand extreme conditions.
+            </p>
+            <p>
+              "The woven structure gripper developed by KIST and KAIST has the
+              strengths of a soft robot but can grasp heavy objects at the level
+              of a rigid gripper," said Dr. Song. "It can be manufactured in a
+              variety of sizes, from coins to cars, and can grip objects of
+              various shapes and weights, from thin cards to flowers, so it is
+              expected to be used in fields such as industry, logistics, and
+              housework that require soft grippers."
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal 3 -->
+
+    <!-- The Modal 4 -->
+    <div class="modal fade" id="myModal4">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              7 Rules to Follow for a Successful Internship
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p><spean>By Alicia Geigel on August 17, 2023</spean></p>
+            <h3>7 Rules to Follow for a Successful Internship</h3>
+            <p>
+              Internships are such an important part of the college experience,
+              as these work opportunities not only help you gain more
+              experience, develop specific skills, and network with others in
+              your field, but they also can open the door to other work
+              opportunities after you graduate.
+            </p>
+            <p>
+              Ensuring that you have a successful internship doesn’t require a
+              lot of overthinking or overworking. Here are seven rules to follow
+              to help you make the most of your internship!
+            </p>
+            <img src="./assets/img/news4.jpg" alt="" />
+            <p>
+              <b>1. Learn About the Company:</b> To stand out to your boss and
+              coworkers, research as much as you can about the company before
+              you start your internship. Conducting research doesn’t have to be
+              difficult, and can be accomplished by a simple Google search. Find
+              the company website and note down all the important information
+              that you can draw from it, such as the company mission statement,
+              its intended target audience, its history, employee reviews, etc.
+              When you research the ins and outs like this, it makes all the
+              difference, as it shows your employer that you are serious about
+              the position you have and the people/company you work for.
+            </p>
+            <p>
+              <b>2. Meet and Network With Your Coworkers:</b> In any workplace,
+              having a solid network of connections is not only a meaningful way
+              to make your internship more positive and pleasant, but it is also
+              a means to help you find new work opportunities and potential
+              promotions in the future. Professional social media pages, like
+              Linkedin, are a great place to start, as you can connect with
+              people you work with, or people that have similar backgrounds,
+              interests, job positions, etc. as you. Whether it’s your coworkers
+              or people you network with online, these mutual connections can
+              point you in the direction of new contacts, job opportunities,
+              etc. Plus, the bigger your network is, the more people you’ll have
+              in your corner to vouch for you when it comes time for references!
+            </p>
+            <p>
+              <b>3. Have a Goal in Mind:</b> Arguably the most important element
+              when interning with a company is figuring out exactly what you
+              want to accomplish as you go through the process. You may want to
+              network with people in that field, develop interpersonal skills,
+              master a technical skill, or simply get college credits.
+              Regardless of what goals you have, an important part of the
+              process is reflecting and searching within yourself to really find
+              what motivates and inspires you in your internship, and go after
+              what fulfills those goals in a meaningful way. Additionally, this
+              part of the process will give you a clear idea of how to ask for
+              what you want in the future.
+            </p>
+            <p>
+              <b>4. Ask Questions:</b> Part of what can make your internship a
+              success or a failure is your ability to ask questions. It may
+              sound like an odd tip, but your ability to be vulnerable with your
+              boss and ask questions about anything you may misunderstand, be
+              confused about, or simply want to learn more about, can ultimately
+              help you grow as a person and an employee. Your boss will
+              definitely appreciate the effort you put forth by asking
+              questions, and see that you are constantly trying to learn. This
+              will be another skill or trait that will look better on your
+              resume!
+            </p>
+            <p>
+              <b>5. Manage Your Time Well:</b> Time management is something that
+              can be utilized in just about every aspect of life, whether it’s
+              at your job, in school, or in your personal life. With an
+              internship, it’s important to manage your time well while you’re
+              on and off the job. Make a schedule that combines elements of
+              school and your internship, and fill it with dude dates for school
+              projects, study time, and extracurriculars, as well as your job
+              hours, deadlines for work projects, office meeting dates, and
+              more. When you manage your time well, it shows your boss and
+              coworkers that you can balance multiple things at once, and are a
+              well-rounded employee.
+            </p>
+            <p>
+              <b>6. Always Be Professional:</b> In any setting and under any
+              circumstance, professionalism is of the utmost importance. Whether
+              your boss is giving you a lecture or extra work that you don’t
+              want, always conduct yourself in a manner that is mature, calm,
+              professional, and reasonable. Sticking through the good and bad
+              parts of your internship will give you wisdom and brownie points
+              for a future job.
+            </p>
+            <p>
+              <b>7. Seek Feedback:</b> Your manager, supervisor, etc. is your
+              first point of contact and resource for everything involving your
+              internship position. If you want to know what it will take to get
+              from your current position to the one you want after your
+              internship is finished, your supervisors are the best people to
+              ask, as they can give feedback to help you improve in areas of
+              weakness and build the skills that are necessary to advance.
+              Kindly ask for feedback from your boss by presenting them with any
+              and all accomplishments, experience, responsibilities, awards,
+              etc. that you’ve obtained on the job. This will paint you in the
+              most honest picture and give them an opportunity to give you a
+              truthful perspective regarding your chances of getting your future
+              dream job.
+            </p>
+            <p>
+              The pressure to have a successful internship is real, but if you
+              follow these steps, you will undoubtedly make new connections,
+              gain new experience, and secure your dream job in the future.
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal 4 -->
+
+    <!-- The Modal 5 -->
+    <div class="modal fade" id="myModal5">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Knee Injections for Osteoarthritis Pain Relief
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h3>Knee Injections for Osteoarthritis Pain Relief</h3>
+            <p>
+              <i
+                >Two studies at the end of 2022 got some attention in the news
+                because they found that steroid injections for osteoarthritis
+                knee pain made osteoarthritis get worse over time. What are the
+                options for osteoarthritis pain relief?</i
+              >
+            </p>
+            <p><span>By Chris Iliades, MD • February 6, 2023</span></p>
+            <img src="./assets/img/news5.jpg" alt="" />
+            <p>
+              Osteoarthritis is the most common type of arthritis and the knee
+              is the most common joint affected. Unlike rheumatoid arthritis,
+              which is an inflammatory disease, osteoarthritis is due to the
+              wear and tear of time. The bones of your knee joint are covered
+              with a tough and smooth protective layer of cartilage and the
+              joint is filled with a lubricating fluid. That allows your knee to
+              move while you walk and run without damaging the ends of the
+              bones.
+            </p>
+            <p>
+              By age 70, <b>for about 40 percent of people,</b> the knee joint
+              cartilage has started to thin or wear away. Bones are grinding on
+              bones, the joint space gets narrower, and symptoms of pain and
+              stiffness start to be a problem. There is no cure for
+              osteoarthritis and it tends to gets worse over time, but there are
+              some <b>effective treatments.</b> For about 10 percent of people
+              with knee osteoarthritis, <b>knee injections</b> are part of the
+              treatment.
+            </p>
+            <h4>
+              American Academy of Orthopedic Surgeons (AAOS) Treatment
+              Guidelines
+            </h4>
+            <p>
+              According to the AAOS, the first treatments for osteoarthritis
+              should include physical therapy and home exercise, nonsteroidal
+              anti-inflammatory drugs (NSAIDs), weight loss if needed, and
+              low-impact aerobic exercise. These treatments are called
+              non-invasive treatments because they do not involve any injections
+              or surgery. They can be managed with your primary care doctor.
+              Non-invasive treatments can’t reverse damage done by
+              osteoarthritis or prevent damage from getting worse, but they can
+              slow down the disease and relieve symptoms. For many people, this
+              is enough to make the disease manageable.
+            </p>
+            <p>
+              NSAIDs can include both over-the-counter medications like Advil or
+              Motrin, and prescription strength NSAIDs from your doctor.
+              Physical therapy may include exercise, heat or cold applications,
+              as well as massage or low-voltage transcutaneous electrical nerve
+              stimulation (TENS) to reduce pain. Low-impact exercises reduce
+              joint stress and can include swimming or walking.
+            </p>
+            <p>
+              There is not much evidence to support alternative treatments. Some
+              studies suggest a role for acupuncture to reduce pain. There is
+              less support for joint supplements like glucosamine and
+              chondroitin. Although many people seem to get relief, studies
+              suggest this is probably a placebo effect. Omega-3 fatty acids in
+              fatty fish or fish oil supplements have better evidence than other
+              supplements for relief of pain and improving function.
+            </p>
+            <h4>The Role of Knee Injections</h4>
+            <p>
+              Knee injections are invasive therapies, usually given by an
+              orthopedic specialist. According to
+              <b>two 2022 studies</b> presented at the annual meeting of
+              Radiological Society of North America; people who had steroid knee
+              injections had more progression of osteoarthritis on knee imaging
+              studies than people who had no injections.
+              <b>Steroid knee injections</b> were also associated with more
+              progression than knee injections using a substance called
+              hyaluronic acid. Steroids work by decreasing swelling in the knee,
+              so they do relieve pain and improve movement. Hyaluronic acid is a
+              lubricant that may help protect the remaining cartilage in the
+              joint.
+            </p>
+            <p>
+              These new studies do not prove that steroid injections make knee
+              osteoarthritis worse, and they are not the first studies to
+              suggest that steroids may be linked to worse long-term outcomes.
+              It may be that the patients who get steroid injections just have
+              worse arthritis. According to AAOS guidelines, steroid injections
+              are reserved for people who have significant changes on their knee
+              x-rays, severe pain, and have not responded to non-invasive
+              treatments.
+            </p>
+            <p>
+              AAOS guidelines say steroids should be used for severe pain and
+              inflammation because most studies show that these injections
+              reliably relieve pain and swelling. AAOS does not recommend
+              hyaluronic acid as a first treatment for severe osteoarthritis
+              because the research does not support it. AAOS also says steroid
+              injections should be limited to three or four times per year to
+              reduce the risk of worsening joint damage over time.
+            </p>
+            <h4>The Role of Knee Surgery</h4>
+            <p>
+              Knee replacement surgery is recommended when all other treatments
+              are not helping. Advances in <b>knee replacement surgery </b>have
+              made it one of the fastest growing surgical options, even in
+              people under age 60. The main reason is that replacing the knee
+              with a meatal and plastic joint takes the pain away and returns
+              basic function. In the hands of an experienced orthopedic surgeon,
+              these results benefits are very reliable, and can last from 15 to
+              25 years.
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal 5 -->
+
+    <!-- The Modal 6 -->
+    <div class="modal fade" id="myModal6">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              AI copilot enhances human precision for safer aviation
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h3>AI copilot enhances human precision for safer aviation</h3>
+            <p>
+              Designed to ensure safer skies, “Air-Guardian” blends human
+              intuition with machine precision, creating a more symbiotic
+              relationship between pilot and aircraft.
+            </p>
+            <p><span>Rachel Gordon | MIT CSAIL</span></p>
+            <p><span>October 3, 2023</span></p>
+            <img src="./assets/img/news6.png" alt="" />
+            <p>
+              Imagine you're in an airplane with two pilots, one human and one
+              computer. Both have their “hands” on the controllers, but they're
+              always looking out for different things. If they're both paying
+              attention to the same thing, the human gets to steer. But if the
+              human gets distracted or misses something, the computer quickly
+              takes over.
+            </p>
+            <p>
+              Meet the Air-Guardian, a system developed by researchers at the
+              MIT Computer Science and Artificial Intelligence Laboratory
+              (CSAIL). As modern pilots grapple with an onslaught of information
+              from multiple monitors, especially during critical moments,
+              Air-Guardian acts as a proactive copilot; a partnership between
+              human and machine, rooted in understanding attention.
+            </p>
+            <p>
+              But how does it determine attention, exactly? For humans, it uses
+              eye-tracking, and for the neural system, it relies on something
+              called "saliency maps," which pinpoint where attention is
+              directed. The maps serve as visual guides highlighting key regions
+              within an image, aiding in grasping and deciphering the behavior
+              of intricate algorithms. Air-Guardian identifies early signs of
+              potential risks through these attention markers, instead of only
+              intervening during safety breaches like traditional autopilot
+              systems.
+            </p>
+            <p>
+              The broader implications of this system reach beyond aviation.
+              Similar cooperative control mechanisms could one day be used in
+              cars, drones, and a wider spectrum of robotics.
+            </p>
+            <p>
+              "An exciting feature of our method is its differentiability," says
+              MIT CSAIL postdoc Lianhao Yin, a lead author on a new paper about
+              Air-Guardian. "Our cooperative layer and the entire end-to-end
+              process can be trained. We specifically chose the causal
+              continuous-depth neural network model because of its dynamic
+              features in mapping attention. Another unique aspect is
+              adaptability. The Air-Guardian system isn't rigid; it can be
+              adjusted based on the situation's demands, ensuring a balanced
+              partnership between human and machine."
+            </p>
+            <p>
+              In field tests, both the pilot and the system made decisions based
+              on the same raw images when navigating to the target waypoint.
+              Air-Guardian’s success was gauged based on the cumulative rewards
+              earned during flight and shorter path to the waypoint. The
+              guardian reduced the risk level of flights and increased the
+              success rate of navigating to target points.
+            </p>
+            <p>
+              "This system represents the innovative approach of human-centric
+              AI-enabled aviation," adds Ramin Hasani, MIT CSAIL research
+              affiliate and inventor of liquid neural networks. "Our use of
+              liquid neural networks provides a dynamic, adaptive approach,
+              ensuring that the AI doesn't merely replace human judgment but
+              complements it, leading to enhanced safety and collaboration in
+              the skies."
+            </p>
+            <p>
+              The true strength of Air-Guardian is its foundational technology.
+              Using an optimization-based cooperative layer using visual
+              attention from humans and machine, and liquid closed-form
+              continuous-time neural networks (CfC) known for its prowess in
+              deciphering cause-and-effect relationships, it analyzes incoming
+              images for vital information. Complementing this is the
+              VisualBackProp algorithm, which identifies the system's focal
+              points within an image, ensuring clear understanding of its
+              attention maps.
+            </p>
+            <p>
+              For future mass adoption, there's a need to refine the
+              human-machine interface. Feedback suggests an indicator, like a
+              bar, might be more intuitive to signify when the guardian system
+              takes control.
+            </p>
+            <p>
+              Air-Guardian heralds a new age of safer skies, offering a reliable
+              safety net for those moments when human attention wavers.
+            </p>
+            <p>
+              "The Air-Guardian system highlights the synergy between human
+              expertise and machine learning, furthering the objective of using
+              machine learning to augment pilots in challenging scenarios and
+              reduce operational errors," says Daniela Rus, the Andrew (1956)
+              and Erna Viterbi Professor of Electrical Engineering and Computer
+              Science at MIT, director of CSAIL, and senior author on the paper.
+            </p>
+            <p>
+              "One of the most interesting outcomes of using a visual attention
+              metric in this work is the potential for allowing earlier
+              interventions and greater interpretability by human pilots," says
+              Stephanie Gil, assistant professor of computer science at Harvard
+              University, who was not involved in the work. "This showcases a
+              great example of how AI can be used to work with a human, lowering
+              the barrier for achieving trust by using natural communication
+              mechanisms between the human and the AI system."
+            </p>
+            <p>
+              This research was partially funded by the U.S. Air Force (USAF)
+              Research Laboratory, the USAF Artificial Intelligence Accelerator,
+              the Boeing Co., and the Office of Naval Research. The findings
+              don't necessarily reflect the views of the U.S. government or the
+              USAF.
+            </p>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal 6 -->
+
+    <!---------- Footer  Starts --------->
+    <footer>
+      <div class="footer">
+        <br />
+        <table class="footer__cont">
+          <tr class="footer_header">
+            <td><a class="footer__hlink">Quick links</a></td>
+            <td><a class="footer__hlink">Information for</a></td>
+            <td><a class="footer__hlink">Faculties, schools and college</a></td>
+            <td><a class="footer__hlink">Media</a></td>
+            <td><a class="footer__hlink">Contact us</a></td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="home.html" class="footer__link">Home</a></td>
+            <td>
+              <a href="study.html#intro" class="footer__link"
+                >Future Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_business.html#welcome-business"
+                class="footer__link"
+                >Faculty of Business</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#Exhibition" class="footer__link">Gallery</a>
+            </td>
+            <td>
+              <a href="contact.html" class="footer__link"
+                >Location and contacts</a
+              >
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="find_course.html#intro" class="footer__link"
+                >Find a course</a
+              >
+            </td>
+            <td>
+              <a href="international.html" class="footer__link"
+                >International Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_health.html#welcome-health"
+                class="footer__link"
+                >Faculty of Health</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#events" class="footer__link">Events</a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="how_to_apply.html#intro" class="footer__link"
+                >How to apply</a
+              >
+            </td>
+            <td>
+              <a href="recognition.html" class="footer__link"
+                >Recognition of Prior Learning</a
+              >
+            </td>
+            <td>
+              <a href="faculty_of_science.html#wahaha" class="footer__link"
+                >Faculty of Science and Engineering</a
+              >
+            </td>
+            <td><a href="news.html#news" class="footer__link">News</a></td>
+            <td>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCrcNBJstILOoDvFMM1CmXIQ"
+                class="footer__icon"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="admission.html" class="footer__link">Admission</a></td>
+            <td>
+              <a href="scholarship.html#intro" class="footer__link"
+                >Scholarships</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="footer__copy">&copy; Copyright UOS. All Rights Reserved</p>
+    </footer>
+    <!---------- Footer Ends --------->
+
+    <script src="./assets/js/index.js"></script>
+
+    <script>
+      //Top Button
+      let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        if (pos > 100) {
+          scrollProgress.style.display = "grid";
+        } else {
+          scrollProgress.style.display = "none";
+        }
+        scrollProgress.addEventListener("click", () => {
+          document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#16a7e0 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      };
+      window.onscroll = calcScrollValue;
+      window.onload = calcScrollValue;
+    </script>
+
+    <script>
+      function openSearch() {
+        document.getElementById("Searchbox").style.display = "block";
+      }
+
+      // Close the full screen search box
+      function closeSearch() {
+        document.getElementById("Searchbox").style.display = "none";
+      }
+
+      const sub = document.getElementById("sub"); //get the form id
+      const input = document.getElementById("searchInput"); //get the search input id
+      const searchList = document.getElementById("searchList"); //get the search list where you want your searched item to display
+
+      //search the info.json file and filter it in the search box to appear when searched
+      const searchInfo = async (searchJson) => {
+        //am using Es6 arrow function here
+
+        const response = await fetch("./assets/js/info.json"); //get the json file into your javascript
+
+        const info = await response.json(); //add the .json to the file to make it into a json in the javascript
+
+        //make the searched term in the search box to match what is in the json file and filter it
+        let list = info.filter((infos) => {
+          const infoReg = new RegExp(`^${searchJson}`, "gi"); //the ^ in the REgExp means that only the first letter of the searched value will searched eg i want money to be searched by the first m not the other letters in it
+
+          //the 'gi' above means you can search with both uppercase and lowercase letter and still get the same search value
+
+          return infos.name.match(infoReg); //return what you what the json file to be searched with
+          //as for me i want it to be searched with the name but you can choose anything you want either searched with url or number
+        });
+
+        //how to check if there is no value in the search box and if there is none then don't show anything
+        if (searchJson.length == 0) {
+          list = [];
+          searchList.innerHTML = ""; //makes the info searched to be removed if there is no searched term/word in the input
+        }
+
+        //call the outputInfo function inside the here
+        outputInfo(list);
+      };
+
+      //creating what will be be displayed when you type in your search
+      const outputInfo = (list) => {
+        if (list.length > 0) {
+          //add the search value you want to show when you search the page
+          const inputValue = list
+            .map(
+              (info) => `
+             <div class="card card-body p-3" style="background: #eee;">
+                    <h3 class="text-start"><a href="${info.url}" target="_self" id="search-link">${info.name}</a></h3>
+                </div>
+        `
+            )
+            .join("");
+          // add the searched value(inputValue) to the div in index.html (searchList)
+          searchList.innerHTML = inputValue;
+        }
+      };
+
+      // add Eventlistener to the input
+      sub.addEventListener("input", (e) => {
+        //    e.preventDefault(); //stop it from actually submiting the file
+
+        searchInfo(input.value); //
+
+        //    input.value = ''; //after searching remove the value in the input
+      });
+    </script>
+  </body>
+</html>

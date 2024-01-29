@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholarships | University of Sam</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/uos-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav_header" id="nav_head">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="./php/staff.php" class="nav__hlink">Staff</a>
+        <a href="international.html" class="nav__hlink">International</a>
+        <a href="alumni.html#alumni-welcome" class="nav__hlink">Alumni</a>
+        <a href="news.html#news" class="nav__hlink">News</a>
+        <a href="admission.html" class="nav__hlink">Admission</a>
+        <a href="contact.html" class="nav__hlink">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Logo Section -->
+    <div class="Logo__Sector">
+      <div class="Logo__img">
+        <a href="home.html">
+          <img src="./assets/img/Logo.png" alt="" />
+        </a>
+      </div>
+      <button class="openBtn" onclick="openSearch()">
+        <i class="fas fa-search fa-2x" style="color: #000000"></i>
+      </button>
+    </div>
+
+    <div id="Searchbox" class="Searchbox">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >x</span
+      >
+      <div class="Searchbox-content">
+        <h2 class="mb-3 p-3 text-light">Search Everything Here</h2>
+        <form id="sub">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            id="searchInput"
+          />
+          <div id="searchList"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Navigation Bars -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__dropdownitem">
+          <a href="study.html#intro" class="nav__link">Study</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="8"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="study.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="find_course.html#intro" class="header__link"
+                  >FIND A COURSE</a
+                >
+              </td>
+              <td>
+                <a href="study.html#info" class="header__link"
+                  >INFORMATION FOR</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="business.html#courses" class="nav__ddlink">Business</a>
+              </td>
+              <td>
+                <a href="undergraduate.html#intro" class="nav__ddlink"
+                  >Undergraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="engineering.html#courses" class="nav__ddlink"
+                  >Engineering</a
+                >
+              </td>
+              <td>
+                <a href="postgraduate.html#intro" class="nav__ddlink"
+                  >Postgraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="health.html#courses" class="nav__ddlink">Health</a>
+              </td>
+              <td>
+                <a href="international.html" class="nav__ddlink"
+                  >International Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a
+                  href="information_technology.html#courses"
+                  class="nav__ddlink"
+                  >Information Technology</a
+                >
+              </td>
+              <td>
+                <a href="entry_requirement.html" class="nav__ddlink"
+                  >Entry Requirements</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="security.html#courses" class="nav__ddlink"
+                  >Security, intelligence and criminology</a
+                >
+              </td>
+              <td>
+                <a href="fees.html#intro" class="nav__ddlink">Fees and costs</a>
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="curstudent.html#intro" class="nav__link">Current Students</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="3">
+                <a href="curstudent.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="curstudent.html#oppo" class="header__link"
+                  >OPPORTUNITIES</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#support" class="header__link"
+                  >SUPPORT</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#life" class="header__link"
+                  >Life at UOS</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="scholarship.html#intro" class="nav__ddlink"
+                  >Scholarships</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#access" class="nav__ddlink"
+                  >Accessibility service</a
+                >
+              </td>
+              <td>
+                <a href="./php/student.php" class="nav__ddlink"
+                  >Student Portal</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#global" class="nav__ddlink"
+                  >Global opportunities</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#academic" class="nav__ddlink"
+                  >Academic support</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="nav__ddlink">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#career" class="nav__ddlink"
+                  >Career development</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#health" class="nav__ddlink"
+                  >Health and wellbeing</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="gallery.html#Exhibition" class="nav__link">Gallery</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="6"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="gallery.html#Exhibition" class="nav__ddlink"
+                  >Overview</a
+                >
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="gallery.html#Exhibition" class="header__link"
+                  >Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="header__link">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#current" class="nav__ddlink"
+                  >Current Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#sports" class="nav__ddlink">Sports</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#future" class="nav__ddlink"
+                  >Upcoming Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#activities" class="nav__ddlink"
+                  >Activities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#past" class="nav__ddlink"
+                  >Past Exhibitions</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="about.html#intro" class="nav__link">About Us</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+            <tr class="overview">
+              <td colspan="3">
+                <a href="about.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="university.html#facilities__about" class="header__link"
+                  >About UOS</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#service" class="header__link"
+                  >Campus Services</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#intro" class="header__link"
+                  >Facilities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="university.html#vision" class="nav__ddlink"
+                  >Vision and strategy</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#student" class="nav__ddlink"
+                  >Students life and support</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#library" class="nav__ddlink"
+                  >Library</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="campus.html#intro" class="nav__ddlink">Our campus</a>
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Campus security</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#cafe" class="nav__ddlink"
+                  >Café, bar and restaurant</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="faculties.html#intro" class="nav__ddlink"
+                  >Our faculties</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Children and youth</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="contact.html" class="nav__ddlink"
+                  >Location and contacts</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </nav>
+
+    <!---------- scholarship  Starts --------->
+    <div class="scholarship">
+      <div class="card" id="banner">
+        <img
+          class="card-img-top"
+          src="./assets/img/scholar-banner.png"
+          alt=""
+        />
+        <div class="card-img-overlay">
+          <h2>Scholarships</h2>
+        </div>
+      </div>
+      <div class="scholarship-top">
+        <div class="container">
+          <nav
+            style="--bs-breadcrumb-divider: '>'; font-weight: 500"
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="home.html">University of Sam</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="study.html#intro">Study</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="study.html#info">Information for</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Scholarships
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="container mt-3 p-3" id="intro">
+        <div class="shard"></div>
+        <h2 class="p-3">Scholarships</h2>
+        <div class="shard"></div>
+        <h4 class="p-3">One of Myanmar's most generous scholarship programs</h4>
+
+        <h6 class="p-3">
+          This includes a wide variety of long and short term opportunities for
+          international students. The range of scholarships available can depend
+          on the country you are from, with other eligibility factors including
+          your field of study and academic or sporting achievements.
+        </h6>
+        <hr />
+        <div class="row">
+          <div class="col-md-4 p-3">
+            <img src="./assets/img/medal.png" class="mx-auto" />
+            <h5 class="text-center">6 millions</h5>
+            <p class="text-center">in scholarships awarded each year</p>
+          </div>
+          <div class="col-md-4 p-3">
+            <img src="./assets/img/team.png" class="mx-auto" />
+            <h5 class="text-center">750+ students</h5>
+            <p class="text-center">
+              receive our scholarships and grants annually
+            </p>
+          </div>
+          <div class="col-md-4 p-3">
+            <img src="./assets/img/world.png" width="100px" class="mx-auto" />
+            <h5 class="text-center">Students from all over the world</h5>
+            <p class="text-center">are among our scholarship recipients</p>
+          </div>
+        </div>
+        <hr />
+
+        <div class="shard"></div>
+        <h4 class="p-3">Scholarships and grants</h4>
+
+        <h6 class="p-3">
+          Through scholarships, UOS endeavours to reward achievement and
+          recognise motivation to succeed. UOS is also committed to providing
+          support to students experiencing financial hardship and/or other
+          educational disadvantages.
+        </h6>
+
+        <details>
+          <summary>Undergraduate scholarships and grants</summary>
+          <ul>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal1" id="link"
+                >International Baccalaureate (IB) Scholarship</a
+              >
+              - 50% tuition fees scholarship for the standard course duration.
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal2" id="link"
+                >Undergraduate Academic Excellence International Scholarship</a
+              >
+              - 25% tuition fees scholarship for the duration.
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal3" id="link"
+                >Vice-Chancellor’s International Undergraduate Scholarship</a
+              >
+              - Full tuition scholarship for the standard course duration.
+            </li>
+          </ul>
+
+          <h4 class="p-3">Country and region-specific scholarships</h4>
+          <ul>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal4" id="link"
+                >Undergraduate Tuition Fee Scholarship </a
+              >- 20% off the standard course duration tuition fee.
+            </li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Postgraduate coursework scholarships and grants</summary>
+          <ul>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal5" id="link"
+                >Grant for Masters by Coursework Students</a
+              >
+              - $3,000 towards your first session tuition fees..
+            </li>
+
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal6" id="link"
+                >Postgraduate Academic Excellence International Scholarship</a
+              >
+              - 30% off tuition fees for the standard course duration.
+              (Available from 2024 intakes)
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal7" id="link"
+                >Vice-Chancellor’s International Postgraduate Coursework
+                Scholarship </a
+              >– Full tuition scholarship for the standard course duration.
+            </li>
+          </ul>
+
+          <h4 class="p-3">Course/faculty-specific scholarships</h4>
+          <ul>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal8" id="link"
+                >Postgraduate Business Scholarship </a
+              >- 20% off the standard course duration tuition fee.
+            </li>
+            <li>
+              <a data-bs-toggle="modal" data-bs-target="#myModal9" id="link"
+                >Postgraduate International Scholarship </a
+              >- 20% off the standard course duration tuition fee.
+            </li>
+          </ul>
+        </details>
+        <br />
+        <hr />
+
+        <div class="shard"></div>
+        <h4 class="p-3">Did you know?</h4>
+        <div class="row">
+          <h6 class="col-md-4 p-3 text-center">
+            UOS offers one of the most generous scholarship programs in Myanmar.
+          </h6>
+          <h6 class="col-md-4 p-3 text-center">
+            The type of scholarship available to you may depend on your country
+            of citizenship, achievements and preferred degree.
+          </h6>
+
+          <h6 class="col-md-4 p-3 text-center">
+            The majority of scholarships do not require an application. You will
+            be automatically assessed and offered a scholarship if qualified.
+          </h6>
+        </div>
+      </div>
+      <div class="quo">
+        <h4>Master of Public Health</h4>
+        <p>
+          "The scholarship supported my degree and industry exposure at UOS. Its
+          central, modern location distinguishes it, offering a youthful vibe
+          and feel, perfect for a young student like me."
+        </p>
+        <h6 align="right">-Jura Princillia</h6>
+      </div>
+      <br />
+      <div class="container-fluid" id="Enquire">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <br />
+              <h4 class="mt-3 p-3">
+                Domestic and International student enquiries
+              </h4>
+              <br />
+            </div>
+            <div class="col-md-5 p-3 text-center">
+              <p>
+                Domestic: Call <a href="tel:+95 1 2541 1111">+95 1 2541 1111</a>
+              </p>
+              <p>
+                International: Call
+                <a href="tel:+95 1 2541 1000">+95 1 2541 1000</a>
+              </p>
+              <a
+                href="admission.html"
+                type="button"
+                class="btn btn-lg btn-danger mt-3 p-3"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Modal 1 -->
+      <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">
+                UOS International Baccalaureate (IB) Scholarship
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td><b>Value</b><br />50% tuition fees</td>
+                  <td><b>Status</b><br />Closed</td>
+                </tr>
+                <tr>
+                  <td><b>Duration</b><br />Standard Duration of UOS Course</td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />01/11/2023</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Closes</b><br />30/11/2023</td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                This Scholarship was established by UOS to attract top achieving
+                commencing international students who are completing the
+                International Baccalaureate (IB) Diploma qualification, and are
+                enrolling in an undergraduate program at UOS.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  Commence full-time studies on campus. On campus studies
+                  include face-to-face and/or online (remote) learning
+                  applicable to all degrees except online degrees and distance
+                  mode degrees.; and
+                </li>
+                <li>
+                  Must be completing or have completed an International
+                  Baccalaureate (IB) Diploma no longer than 1 year prior to
+                  commencing at UOS, and be admitted based on this qualification
+                  to UOS; and
+                </li>
+                <li>
+                  Meet the UOS admission criteria for the selected UOS
+                  undergraduate degree course; and
+                </li>
+                <li>
+                  Must obtain an aggregate score including bonus and penalty
+                  points of 28 or above in their International Baccalaureate
+                  (IB) final grades, or 33 or above in their International
+                  Baccalaureate predicted grades at the point the scholarship
+                  decision is made; and
+                </li>
+                <li>
+                  All candidates must apply using the UOS online Scholarships
+                  application form to be eligible; and
+                </li>
+              </ul>
+              <p class="p-3">Must not:</p>
+
+              <ul>
+                <li>
+                  be studying a UOS online degree or distance mode degree; or
+                </li>
+                <li>be a government sponsored student; or</li>
+                <li>
+                  be a recipient of another UOS scholarship for the duration of
+                  this Scholarship.
+                </li>
+              </ul>
+              <p class="p-3">
+                On campus studies include face-to-face and/or online (remote)
+                learning applicable to all degrees except online degrees and
+                distance mode degrees.
+              </p>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                Academic merit based on International Baccalaureate (IB) Diploma
+                final results or International Baccalaureate predicted results.
+              </p>
+              <p class="p-3">
+                Where there are multiple applicants with the same International
+                Baccalaureate (IB) Diploma results, further consideration will
+                be given to the answer to the following questions:
+              </p>
+              <ul>
+                <li>
+                  Commitment to utilise your UOS degree to make a positive
+                  contribution your home society/country, as demonstrated by the
+                  Scholarship application; and
+                </li>
+                <li>
+                  Personal experience and achievement to date, including but not
+                  limited to examples of community service, innovation or
+                  entrepreneurship.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 1 -->
+
+      <!-- The Modal 2 -->
+      <div class="modal fade" id="myModal2">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Undergraduate Academic Excellence International Scholarship
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td><b>Value</b><br />25% tuition fees</td>
+                  <td><b>Status</b><br />Open</td>
+                </tr>
+                <tr>
+                  <td>
+                    <b>Duration</b><br />Standard Duration of UOS Bachelor
+                    degree
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />25/11/2023</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                To attract high performing commencing international students to
+                enroll in an undergraduate coursework program at UOS.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  Must have completed a Year 12 or UOS recognized high school
+                  studies comparable to a Year 12 oUOSide of Myanmar, and be
+                  admitted to UOS based on this qualification; and
+                </li>
+                <li>
+                  Must meet all admission requirements for the selected UOS
+                  undergraduate coursework program; and
+                </li>
+                <li>
+                  Must be commencing full-time time study at UOS on campus. On
+                  campus studies include face-to-face and/or online (remote)
+                  learning applicable to all degrees except online degrees and
+                  distance mode degrees; and
+                </li>
+                <li>
+                  Must not be studying a UOS online degree or distance mode
+                  degree.
+                </li>
+              </ul>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                Academic merit in a Year 12 (MTAR rank without adjustment
+                factors) or UOS recognised high school studies comparable to a
+                Year 12 qualification for entry into the selected UOS
+                undergraduate coursework program.
+              </p>
+              <h4 class="p-3">How to apply</h4>
+              <p class="p-3">
+                UOS International will automatically consider all commencing
+                international students applying for an undergraduate program at
+                UOS for this Scholarship. There is no separate scholarship
+                application or documentation in addition to what is required for
+                the coursework application.
+              </p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 2-->
+
+      <!-- The Modal 3 -->
+      <div class="modal fade" id="myModal3">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Vice-Chancellor’s International Undergraduate Scholarship
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td><b>Value</b><br />UOS tuition fees</td>
+                  <td><b>Status</b><br />Closed</td>
+                </tr>
+                <tr>
+                  <td><b>Duration</b><br />Standard Duration of UOS Course</td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />10/1/2024</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Closes</b><br />30/1/2023</td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                This Scholarship was established to support high achieving
+                commencing international students enrolling in an undergraduate
+                program at UOS. The scholarship is to be offered to
+                international students who exhibit the University’s core values
+                and can demonstrate commitment to excellence, innovation,
+                entrepreneurship and social justice.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  meet all admission requirements for the selected course by the
+                  closing date of the scholarship application; and
+                </li>
+                <li>
+                  Commence full-time studies on campus. On campus studies
+                  include face-to-face and/or online (remote) learning
+                  applicable to all degrees except online degrees and distance
+                  mode degrees.; and
+                </li>
+                <li>
+                  have completed a Year 12 or high school studies comparable to
+                  a Year 12 oUOSide of Myanmar no longer than three (3) years
+                  prior to commencing at UOS and be admitted based on this
+                  qualification to UOS; and
+                </li>
+                <li>
+                  have an overall average of 85% where the pass mark is 50% or
+                  equivalent in a UOS recognized high school qualification; and
+                </li>
+                <li>
+                  All candidates must apply using the UOS online Scholarships
+                  application form to be eligible; and
+                </li>
+              </ul>
+              <p class="p-3">Must not:</p>
+
+              <ul>
+                <li>
+                  be studying a UOS online degree or distance mode degree; or
+                </li>
+                <li>be a government sponsored student; or</li>
+                <li>
+                  be a recipient of another UOS scholarship for the duration of
+                  this Scholarship.
+                </li>
+              </ul>
+              <p class="p-3">
+                On campus studies include face-to-face and/or online (remote)
+                learning applicable to all degrees except online degrees and
+                distance mode degrees.
+              </p>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                The Scholarship will be awarded to the highest ranked applicant
+                on the basis of academic merit in the academic qualification
+                used as a basis for admission into the selected UOS Bachelor
+                degree program coupled with the applicant’s response to the
+                questions asked in the UOS online scholarship application.
+              </p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 3 -->
+
+      <!-- The Modal 4 -->
+      <div class="modal fade" id="myModal4">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Undergraduate Tuition Fee Scholarship</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td><b>Value</b><br />20% of UOS tuition fees</td>
+                  <td><b>Status</b><br />Open</td>
+                </tr>
+                <tr>
+                  <td><b>Duration</b><br />Standard Duration of the course</td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />2/2/2024</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                This Scholarship was established to attract commencing
+                international students enrolling in an undergraduate coursework
+                program at UOS.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  meet all admission requirements for the selected course by the
+                  closing date of the scholarship application; and
+                </li>
+                <li>
+                  Commence full-time studies on campus. On campus studies
+                  include face-to-face and/or online (remote) learning
+                  applicable to all degrees except online degrees and distance
+                  mode degrees.; and
+                </li>
+                <li>
+                  have completed a Year 12 or high school studies comparable to
+                  a Year 12 oUOSide of Myanmar no longer than three (3) years
+                  prior to commencing at UOS and be admitted based on this
+                  qualification to UOS; and
+                </li>
+                <li>
+                  have an overall average of 85% where the pass mark is 50% or
+                  equivalent in a UOS recognized high school qualification; and
+                </li>
+                <li>
+                  All candidates must apply using the UOS online Scholarships
+                  application form to be eligible; and
+                </li>
+              </ul>
+              <p class="p-3">Must not:</p>
+
+              <ul>
+                <li>
+                  be studying a UOS online degree or distance mode degree; or
+                </li>
+                <li>be a government sponsored student; or</li>
+                <li>
+                  be a recipient of another UOS scholarship for the duration of
+                  this Scholarship.
+                </li>
+              </ul>
+              <p class="p-3">
+                On campus studies include face-to-face and/or online (remote)
+                learning applicable to all degrees except online degrees and
+                distance mode degrees.
+              </p>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                Acceptance of the selected UOS undergraduate coursework program
+                (including payment of deposit required).
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">How to apply</h4>
+              <p class="p-3">
+                UOS International will automatically consider all commencing
+                international students meeting the eligibility criteria and
+                applying for an undergraduate coursework program at UOS for this
+                Scholarship. There is no separate scholarship application or
+                documentation in addition to what is required for the coursework
+                application.
+              </p>
+              <p class="p-3">Offers will be authorized by UOS International.</p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 4 -->
+
+      <!-- The Modal 5 -->
+      <div class="modal fade" id="myModal5">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Grant for Masters by Coursework Students
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td>
+                    <b>Value</b><br />$3,000 towards the first session tuition
+                    fees
+                  </td>
+                  <td><b>Status</b><br />Open</td>
+                </tr>
+                <tr>
+                  <td><b>Duration</b><br />Standard Duration of the course</td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />30/12/2023</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                This Grant was established to attract commencing international
+                students already in Myanmar to enrol in a Master by coursework
+                program at UOS.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  Must remain an international student post census date for the
+                  session in which they receive the Grant; and
+                </li>
+                <li>Must be commencing full-time on-campus; and</li>
+                <li>
+                  Must meet all admission criteria for the Master by coursework
+                  program at UOS; and
+                </li>
+                <li>
+                  Must have completed a Bachelor degree or higher qualification
+                  in Myanmar, no longer than 1 year prior to commencing at UOS,
+                  and must be admitted based on this qualification to UOS; and
+                </li>
+                <li>
+                  Must not be a recipient of a scholarship, grant or the Alumni
+                  Advantage Program from UOS; and
+                </li>
+                <li>Must not be a government sponsored student; and</li>
+                <li>
+                  Must not be a student whose course at UOS forms as part of a
+                  package offer.
+                </li>
+              </ul>
+
+              <p class="p-3">
+                Acceptance of the UOS course offer (including payment of deposit
+                required).
+              </p>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                Acceptance of the selected UOS undergraduate coursework program
+                (including payment of deposit required).
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">How to apply</h4>
+              <p class="p-3">
+                UOS International will automatically consider all commencing
+                international students with a completed Bachelor degree or
+                higher qualification from Myanmar and applying for a Master by
+                coursework program at UOS. There is no separate application or
+                documentation in addition to what is required for the coursework
+                application.
+              </p>
+              <p class="p-3">Offers will be authorized by UOS International.</p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 5 -->
+
+      <!-- The Modal 6 -->
+      <div class="modal fade" id="myModal6">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Postgraduate Academic Excellence International Scholarship
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td><b>Value</b><br />25% or 35% of UOS tuition fees</td>
+                  <td><b>Status</b><br />Open</td>
+                </tr>
+                <tr>
+                  <td><b>Duration</b><br />Standard Duration of the course</td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />30/12/2022</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                This Grant was established to attract commencing international
+                students already in Myanmar to enrol in a Master by coursework
+                program at UOS.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  Must meet all admission criteria for the selected Master by
+                  coursework program; and
+                </li>
+
+                <li>
+                  Must be commencing studies at UOS full-time and on campus[1];
+                  and
+                </li>
+                <li>
+                  Must not be a recipient of a scholarship, grant or the Alumni
+                  Advantage Program from UOS; and
+                </li>
+                <li>Must not be a government sponsored student; and</li>
+                <li>
+                  Must not be a student whose course at UOS forms as part of a
+                  package offer.
+                </li>
+              </ul>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                <b>Applicants for all other coursework programs: </b>Academic
+                merit in the most recently completed tertiary qualification
+                recognised by UOS for entry into the selected UOS Master degree
+                by coursework program.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">How to apply</h4>
+              <p class="p-3">
+                UOS Future Learner Recruitment and Admissions will automatically
+                consider all commencing international students applying for a
+                postgraduate coursework program at UOS for this Scholarship.
+                There is no separate scholarship application or documentation in
+                addition to what is required for the coursework application.
+              </p>
+              <p class="p-3">
+                Offers will be authorized by UOS Future Learner Recruitment and
+                Admissions.
+              </p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 6 -->
+
+      <!-- The Modal 7 -->
+      <div class="modal fade" id="myModal7">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Vice-Chancellor’s International Postgraduate Coursework
+                Scholarship
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td><b>Value</b><br />UOS Tuition Fees</td>
+                  <td><b>Status</b><br />Closed</td>
+                </tr>
+                <tr>
+                  <td><b>Duration</b><br />Standard Duration of the course</td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />30/12/2023</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><b>Closes</b><br />1/2/2024</td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                This Scholarship was established to support high achieving
+                commencing international students enrolling in a postgraduate
+                coursework program at UOS. The scholarship is to be offered to
+                international students who exhibit the University’s core values
+                and can demonstrate commitment to excellence, innovation,
+                entrepreneurship and social justice.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  Must meet all admission criteria for the selected Master by
+                  coursework program; and
+                </li>
+
+                <li>
+                  Must be commencing studies at UOS full-time and on campus[1];
+                  and
+                </li>
+                <li>
+                  have an overall average of 90% where the pass mark is 50% or
+                  equivalent in a UOS recognised Bachelor qualification; and
+                </li>
+                <li>
+                  Must not be a recipient of a scholarship, grant or the Alumni
+                  Advantage Program from UOS; and
+                </li>
+                <li>Must not be a government sponsored student; and</li>
+                <li>
+                  Must not be a student whose course at UOS forms as part of a
+                  package offer.
+                </li>
+              </ul>
+
+              <p class="p-3">
+                Acceptance of the UOS course offer (including payment of deposit
+                required).
+              </p>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                The Scholarship will be awarded to the highest ranked applicant
+                on the basis of academic merit in the academic qualification
+                used as a basis for admission into the selected UOS postgraduate
+                coursework program, coupled with the applicant’s response to
+                questions asked in the UOS online scholarship application.
+              </p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 7 -->
+
+      <!-- The Modal 8-->
+      <div class="modal fade" id="myModal8">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Postgraduate Business Scholarship</h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td><b>Value</b><br />20% of UOS Tuition Fees</td>
+                  <td><b>Status</b><br />Open</td>
+                </tr>
+                <tr>
+                  <td><b>Duration</b><br />Standard Duration of the course</td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />30/12/2023</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                This Scholarship was established to attract commencing
+                international students with an Australian degree to enroll in a
+                Master degree by coursework program at UOS Business Faculty.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  Commence full-time studies and on campus[1] at UOS in 2024 or
+                  2025; and
+                </li>
+
+                <li>
+                  Meet UOS admission criteria for the selected UOS Business
+                  Faculty Master degree by coursework program; and
+                </li>
+                <li>
+                  Must have completed a recognised Myanmar tertiary
+                  qualification at a Bachelor degree level or higher; and
+                </li>
+                <li>
+                  Must not be a recipient of a scholarship, grant or the Alumni
+                  Advantage Program from UOS; and
+                </li>
+                <li>Must not be a government sponsored student; and</li>
+                <li>
+                  be studying a UOS online degree or distance mode degree; or
+                </li>
+              </ul>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                Acceptance of the selected UOS Business School Master degree by
+                coursework program (including payment of deposit required).
+              </p>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">How to apply</h4>
+              <p class="p-3">
+                UOS International will automatically consider all commencing
+                international students applying for a Master degree by
+                coursework program at UOS Business Faculty for this Scholarship.
+                There is no separate scholarship application or documentation in
+                addition to what is required for the coursework application.
+              </p>
+              <p class="p-3">Offers will be authorized by UOS International.</p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 8-->
+
+      <!-- The Modal 9-->
+      <div class="modal fade" id="myModal9">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Postgraduate International Scholarship
+              </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td><b>Value</b><br />20% of UOS Tuition Fees</td>
+                  <td><b>Status</b><br />Open</td>
+                </tr>
+                <tr>
+                  <td><b>Duration</b><br />Standard Duration of the course</td>
+                </tr>
+                <tr>
+                  <td><b>Opens</b><br />13/09/2023</td>
+                  <td>
+                    <b>Quick Links</b><br />
+                    <ul>
+                      <li><a href="scholarship.html#intro">Scholarships</a></li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <div class="shard"></div>
+              <h4 class="p-3">Overview</h4>
+              <p class="p-3">
+                This Scholarship was established to attract commencing
+                international students to enroll in a Master degree by
+                coursework program at UOS's Faculty of Business, Faculty of
+                Health, and Faculty of Science and Engineering.
+              </p>
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Who is eligible?</h4>
+              <p class="p-3">
+                To be eligible to apply for the Scholarship, an applicant must
+                meet all of the following criteria:
+              </p>
+              <ul>
+                <li>
+                  Must be an international student (not Myanmar Citizen); and
+                </li>
+                <li>
+                  Commence full-time studies and on campus[1] at UOS in 2024 or
+                  2025; and
+                </li>
+
+                <li>
+                  Meet UOS admission criteria for the selectedUOS's Faculty of
+                  Business, Faculty of Health, and Faculty of Science and
+                  Engineering Master degree by coursework program; and
+                </li>
+                <li>
+                  Must have completed a recognised Myanmar tertiary
+                  qualification at a Bachelor degree level or higher; and
+                </li>
+                <li>
+                  Must not be a recipient of a scholarship, grant or the Alumni
+                  Advantage Program from UOS; and
+                </li>
+                <li>Must not be a government sponsored student; and</li>
+                <li>
+                  be studying a UOS online degree or distance mode degree; or
+                </li>
+              </ul>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">Selection process</h4>
+
+              <p class="p-3">
+                Acceptance of the selected UOS's Faculty of Business, Faculty of
+                Health, and Faculty of Science and Engineering Master degree by
+                coursework program (including payment of deposit required).
+              </p>
+
+              <hr />
+              <div class="shard"></div>
+              <h4 class="p-3">How to apply</h4>
+              <p class="p-3">
+                UOS International will automatically consider all commencing
+                international students applying for a Master degree by
+                coursework program at UOS's Faculty of Business, Faculty of
+                Health, and Faculty of Science and Engineering for this
+                Scholarship. There is no separate scholarship application or
+                documentation in addition to what is required for the coursework
+                application.
+              </p>
+              <p class="p-3">Offers will be authorized by UOS International.</p>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-danger"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The Modal 9-->
+    </div>
+    <!---------- recog  Ends --------->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!---------- Footer  Starts --------->
+    <footer>
+      <div class="footer">
+        <br />
+        <table class="footer__cont">
+          <tr class="footer_header">
+            <td><a class="footer__hlink">Quick links</a></td>
+            <td><a class="footer__hlink">Information for</a></td>
+            <td><a class="footer__hlink">Faculties, schools and college</a></td>
+            <td><a class="footer__hlink">Media</a></td>
+            <td><a class="footer__hlink">Contact us</a></td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="home.html" class="footer__link">Home</a></td>
+            <td>
+              <a href="study.html#intro" class="footer__link"
+                >Future Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_business.html#welcome-business"
+                class="footer__link"
+                >Faculty of Business</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#Exhibition" class="footer__link">Gallery</a>
+            </td>
+            <td>
+              <a href="contact.html" class="footer__link"
+                >Location and contacts</a
+              >
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="find_course.html#intro" class="footer__link"
+                >Find a course</a
+              >
+            </td>
+            <td>
+              <a href="international.html" class="footer__link"
+                >International Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_health.html#welcome-health"
+                class="footer__link"
+                >Faculty of Health</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#events" class="footer__link">Events</a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="how_to_apply.html#intro" class="footer__link"
+                >How to apply</a
+              >
+            </td>
+            <td>
+              <a href="recognition.html" class="footer__link"
+                >Recognition of Prior Learning</a
+              >
+            </td>
+            <td>
+              <a href="faculty_of_science.html#wahaha" class="footer__link"
+                >Faculty of Science and Engineering</a
+              >
+            </td>
+            <td><a href="news.html#news" class="footer__link">News</a></td>
+            <td>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCrcNBJstILOoDvFMM1CmXIQ"
+                class="footer__icon"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="admission.html" class="footer__link">Admission</a></td>
+            <td>
+              <a href="scholarship.html#intro" class="footer__link"
+                >Scholarships</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="footer__copy">&copy; Copyright UOS. All Rights Reserved</p>
+    </footer>
+    <!---------- Footer Ends --------->
+
+    <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      //Top Button
+      let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        if (pos > 100) {
+          scrollProgress.style.display = "grid";
+        } else {
+          scrollProgress.style.display = "none";
+        }
+        scrollProgress.addEventListener("click", () => {
+          document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#16a7e0 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      };
+      window.onscroll = calcScrollValue;
+      window.onload = calcScrollValue;
+    </script>
+
+    <script>
+      function openSearch() {
+        document.getElementById("Searchbox").style.display = "block";
+      }
+
+      // Close the full screen search box
+      function closeSearch() {
+        document.getElementById("Searchbox").style.display = "none";
+      }
+
+      const sub = document.getElementById("sub"); //get the form id
+      const input = document.getElementById("searchInput"); //get the search input id
+      const searchList = document.getElementById("searchList"); //get the search list where you want your searched item to display
+
+      //search the info.json file and filter it in the search box to appear when searched
+      const searchInfo = async (searchJson) => {
+        //am using Es6 arrow function here
+
+        const response = await fetch("./assets/js/info.json"); //get the json file into your javascript
+
+        const info = await response.json(); //add the .json to the file to make it into a json in the javascript
+
+        //make the searched term in the search box to match what is in the json file and filter it
+        let list = info.filter((infos) => {
+          const infoReg = new RegExp(`^${searchJson}`, "gi"); //the ^ in the REgExp means that only the first letter of the searched value will searched eg i want money to be searched by the first m not the other letters in it
+
+          //the 'gi' above means you can search with both uppercase and lowercase letter and still get the same search value
+
+          return infos.name.match(infoReg); //return what you what the json file to be searched with
+          //as for me i want it to be searched with the name but you can choose anything you want either searched with url or number
+        });
+
+        //how to check if there is no value in the search box and if there is none then don't show anything
+        if (searchJson.length == 0) {
+          list = [];
+          searchList.innerHTML = ""; //makes the info searched to be removed if there is no searched term/word in the input
+        }
+
+        //call the outputInfo function inside the here
+        outputInfo(list);
+      };
+
+      //creating what will be be displayed when you type in your search
+      const outputInfo = (list) => {
+        if (list.length > 0) {
+          //add the search value you want to show when you search the page
+          const inputValue = list
+            .map(
+              (info) => `
+         <div class="card card-body p-3" style="background: #eee;">
+                <h3 class="text-start"><a href="${info.url}" target="_self" id="search-link">${info.name}</a></h3>
+            </div>
+    `
+            )
+            .join("");
+          // add the searched value(inputValue) to the div in index.html (searchList)
+          searchList.innerHTML = inputValue;
+        }
+      };
+
+      // add Eventlistener to the input
+      sub.addEventListener("input", (e) => {
+        //    e.preventDefault(); //stop it from actually submiting the file
+
+        searchInfo(input.value); //
+
+        //    input.value = ''; //after searching remove the value in the input
+      });
+    </script>
+  </body>
+</html>

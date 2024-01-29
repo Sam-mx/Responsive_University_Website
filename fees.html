@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fees and Costs | University of Sam</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/uos-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav_header" id="nav_head">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="./php/staff.php" class="nav__hlink">Staff</a>
+        <a href="international.html" class="nav__hlink">International</a>
+        <a href="alumni.html#alumni-welcome" class="nav__hlink">Alumni</a>
+        <a href="news.html#news" class="nav__hlink">News</a>
+        <a href="admission.html" class="nav__hlink">Admission</a>
+        <a href="contact.html" class="nav__hlink">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Logo Section -->
+    <div class="Logo__Sector">
+      <div class="Logo__img">
+        <a href="home.html">
+          <img src="./assets/img/Logo.png" alt="" />
+        </a>
+      </div>
+      <button class="openBtn" onclick="openSearch()">
+        <i class="fas fa-search fa-2x" style="color: #000000"></i>
+      </button>
+    </div>
+
+    <div id="Searchbox" class="Searchbox">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >x</span
+      >
+      <div class="Searchbox-content">
+        <h2 class="mb-3 p-3 text-light">Search Everything Here</h2>
+        <form id="sub">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            id="searchInput"
+          />
+          <div id="searchList"></div>
+        </form>
+      </div>
+    </div>
+    <!-- Navigation Bars -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__dropdownitem">
+          <a href="study.html#intro" class="nav__link">Study</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="8"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="study.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="find_course.html#intro" class="header__link"
+                  >FIND A COURSE</a
+                >
+              </td>
+              <td>
+                <a href="study.html#info" class="header__link"
+                  >INFORMATION FOR</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="business.html#courses" class="nav__ddlink">Business</a>
+              </td>
+              <td>
+                <a href="undergraduate.html#intro" class="nav__ddlink"
+                  >Undergraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="engineering.html#courses" class="nav__ddlink"
+                  >Engineering</a
+                >
+              </td>
+              <td>
+                <a href="postgraduate.html#intro" class="nav__ddlink"
+                  >Postgraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="health.html#courses" class="nav__ddlink">Health</a>
+              </td>
+              <td>
+                <a href="international.html" class="nav__ddlink"
+                  >International Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a
+                  href="information_technology.html#courses"
+                  class="nav__ddlink"
+                  >Information Technology</a
+                >
+              </td>
+              <td>
+                <a href="entry_requirement.html" class="nav__ddlink"
+                  >Entry Requirements</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="security.html#courses" class="nav__ddlink"
+                  >Security, intelligence and criminology</a
+                >
+              </td>
+              <td>
+                <a href="fees.html#intro" class="nav__ddlink">Fees and costs</a>
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="curstudent.html#intro" class="nav__link">Current Students</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="3">
+                <a href="curstudent.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="curstudent.html#oppo" class="header__link"
+                  >OPPORTUNITIES</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#support" class="header__link"
+                  >SUPPORT</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#life" class="header__link"
+                  >Life at UOS</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="scholarship.html#intro" class="nav__ddlink"
+                  >Scholarships</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#access" class="nav__ddlink"
+                  >Accessibility service</a
+                >
+              </td>
+              <td>
+                <a href="./php/student.php" class="nav__ddlink"
+                  >Student Portal</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#global" class="nav__ddlink"
+                  >Global opportunities</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#academic" class="nav__ddlink"
+                  >Academic support</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="nav__ddlink">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="curstudent.html#career" class="nav__ddlink"
+                  >Career development</a
+                >
+              </td>
+              <td>
+                <a href="curstudent.html#health" class="nav__ddlink"
+                  >Health and wellbeing</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="gallery.html#Exhibition" class="nav__link">Gallery</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="6"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="gallery.html#Exhibition" class="nav__ddlink"
+                  >Overview</a
+                >
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="gallery.html#Exhibition" class="header__link"
+                  >Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#events" class="header__link">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#current" class="nav__ddlink"
+                  >Current Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#sports" class="nav__ddlink">Sports</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#future" class="nav__ddlink"
+                  >Upcoming Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="gallery.html#activities" class="nav__ddlink"
+                  >Activities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="gallery.html#past" class="nav__ddlink"
+                  >Past Exhibitions</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="about.html#intro" class="nav__link">About Us</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+            <tr class="overview">
+              <td colspan="3">
+                <a href="about.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="university.html#facilities__about" class="header__link"
+                  >About UOS</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#service" class="header__link"
+                  >Campus Services</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#intro" class="header__link"
+                  >Facilities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="university.html#vision" class="nav__ddlink"
+                  >Vision and strategy</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#student" class="nav__ddlink"
+                  >Students life and support</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#library" class="nav__ddlink"
+                  >Library</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="campus.html#intro" class="nav__ddlink">Our campus</a>
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Campus security</a
+                >
+              </td>
+              <td>
+                <a href="facilities.html#cafe" class="nav__ddlink"
+                  >Café, bar and restaurant</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="faculties.html#intro" class="nav__ddlink"
+                  >Our faculties</a
+                >
+              </td>
+              <td>
+                <a href="campus.html#security" class="nav__ddlink"
+                  >Children and youth</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="contact.html" class="nav__ddlink"
+                  >Location and contacts</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </nav>
+
+    <!---------- Fees  Starts --------->
+    <div class="recog">
+      <div class="recog-top">
+        <div class="container">
+          <nav
+            style="--bs-breadcrumb-divider: '>'; font-weight: 500"
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="home.html">University of Sam</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="study.html#intro">Study</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="study.html#info">Information for</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Fees and Costs
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="container mt-3 p-3" id="intro">
+        <div class="shard"></div>
+        <h2 class="p-3">Fees and Costs</h2>
+        <div class="shard"></div>
+        <h4 class="p-3">What’s the cost of studying?</h4>
+        <h6 class="p-3">
+          Attending university is one of the best investments you can make for
+          your future. We offer lots of support along the way.
+        </h6>
+        <details>
+          <summary>Tuition Fees</summary>
+
+          <h4 class="p-3">Undergraduate Tuition Fees</h4>
+          <div class="table-responsive">
+            <table class="table table-hover table-borderless table-striped">
+              <tr class="table-primary">
+                <th>PROGRAM NAME</th>
+                <th>PROGRAM CODE</th>
+                <th>CRICOS CODE</th>
+                <th>DURATION (in Years)</th>
+                <th>INTAKE</th>
+                <th>
+                  FEES 2024<br />
+                  $USD#
+                </th>
+                <th>CAMPUS</th>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3">
+                  <a href="business.html#courses">BUSINESS</a>
+                </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_applied_finance.html"
+                    >Bachelor of Applied Finance</a
+                  >
+                </td>
+                <td>1101</td>
+                <td>029834A</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$31,928</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_business.html"
+                    >Bachelor of Business</a
+                  >
+                </td>
+                <td>1102</td>
+                <td>029834B</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$31,928</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_business_analytics.html"
+                    >Bachelor of Business Analytics</a
+                  >
+                </td>
+                <td>1103</td>
+                <td>029834C</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$31,928</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_commerce.html"
+                    >Bachelor of Commerce</a
+                  >
+                </td>
+                <td>1104</td>
+                <td>029834D</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$31,928</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_economics.html"
+                    >Bachelor of Economics</a
+                  >
+                </td>
+                <td>1105</td>
+                <td>029834E</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$31,928</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_marketing_and_media.html"
+                    >Bachelor of Marketing and Media</a
+                  >
+                </td>
+                <td>1106</td>
+                <td>029834F</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$31,928</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_pro_accounting.html"
+                    >Bachelor of Professional Accounting</a
+                  >
+                </td>
+                <td>1107</td>
+                <td>029834G</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$31,928</td>
+                <td>UOS</td>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3">
+                  <a href="engineering.html#courses">ENGINEERING</a>
+                </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_engineering.html"
+                    >Bachelor of Engineering (Honours)</a
+                  ><br /><span class="text-secondary"
+                    >Key programs: Civil, Environmental, Electrical and
+                    electronic, Mechanical, and Mechatronics</span
+                  >
+                </td>
+                <td>1201</td>
+                <td>039834A</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$36,424</td>
+                <td>UOS</td>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3"><a href="health.html#courses">HEALTH</a></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_chiropractic.html"
+                    >Bachelor of Chiropractic Science</a
+                  >
+                </td>
+                <td>1301</td>
+                <td>049834A</td>
+                <td>3 Years</td>
+                <td>Mar</td>
+                <td>$30,960</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_clinical_science.html"
+                    >Bachelor of Clinical Science
+                  </a>
+                </td>
+                <td>1302</td>
+                <td>049834B</td>
+                <td>2 Years</td>
+                <td>Mar</td>
+                <td>$68,850</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_exercise.html"
+                    >Bachelor of Exercise and Sports Science
+                  </a>
+                </td>
+                <td>1303</td>
+                <td>049834C</td>
+                <td>3 Years</td>
+                <td>Mar</td>
+                <td>$33,160</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_medical_science.html"
+                    >Bachelor of Medical Sciences
+                  </a>
+                </td>
+                <td>1304</td>
+                <td>049834D</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$37,488</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_speech.html"
+                    >Bachelor of Speech and Hearing Sciences</a
+                  >
+                </td>
+                <td>1305</td>
+                <td>049834E</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$33,608</td>
+                <td>UOS</td>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3">
+                  <a href="information_technology.html#courses"
+                    >INFORMATION TECHNOLOGY</a
+                  >
+                </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_cyber.html"
+                    >Bachelor of Cyber Security</a
+                  >
+                </td>
+                <td>1401</td>
+                <td>059834A</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$35,720</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_game.html"
+                    >Bachelor of Game Design and Development</a
+                  >
+                </td>
+                <td>1402</td>
+                <td>059834B</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$30,960</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_IT.html"
+                    >Bachelor of Information Technology</a
+                  >
+                </td>
+                <td>1403</td>
+                <td>059834C</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$34,040</td>
+                <td>UOS</td>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3">
+                  <a href="security.html#courses"
+                    >SECURITY, INTELLIGENCE AND CRIMINOLOGY</a
+                  >
+                </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_arts.html">Bachelor of Arts</a>
+                </td>
+                <td>1501</td>
+                <td>069834A</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$30,960</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_security_studies.html"
+                    >Bachelor of Security Studies</a
+                  >
+                </td>
+                <td>1502</td>
+                <td>069834B</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$34,040</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/bachelor_of_social_science.html"
+                    >Bachelor of Social Science</a
+                  >
+                </td>
+                <td>1503</td>
+                <td>069834C</td>
+                <td>3 Years</td>
+                <td>Mar/Aug</td>
+                <td>$35,720</td>
+                <td>UOS</td>
+              </tr>
+            </table>
+          </div>
+
+          <h4 class="p-3">Postgraduate Tuition Fees</h4>
+          <div class="table-responsive">
+            <table class="table table-hover table-borderless table-striped">
+              <tr class="table-primary">
+                <th>PROGRAM NAME</th>
+                <th>PROGRAM CODE</th>
+                <th>CRICOS CODE</th>
+                <th>DURATION (in Years)</th>
+                <th>INTAKE</th>
+                <th>
+                  FEES 2024<br />
+                  $USD#
+                </th>
+                <th>CAMPUS</th>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3">
+                  <a href="business.html#courses">BUSINESS</a>
+                </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_accounting.html"
+                    >Master of Accounting</a
+                  >
+                </td>
+                <td>2101</td>
+                <td>129834A</td>
+                <td>1.5 Years</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_applied_economics.html"
+                    >Master of Applied Economics</a
+                  >
+                </td>
+                <td>2102</td>
+                <td>129834B</td>
+                <td>1, 1.5 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_applied_finance.html"
+                    >Master of Applied Finance</a
+                  >
+                </td>
+                <td>2103</td>
+                <td>129834C</td>
+                <td>1, 1.5 or 2 Years^</td>
+                <td>Jan/Apr/Jun/Sep</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_banking_and_finance.html"
+                    >Master of Banking and Finance</a
+                  >
+                </td>
+                <td>2104</td>
+                <td>129834D</td>
+                <td>1.5 or 2 Years</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_business_analytics.html"
+                    >Master of Business Analytics</a
+                  >
+                </td>
+                <td>2105</td>
+                <td>129834E</td>
+                <td>1, 1.5 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_business_admin.html"
+                    >Master of Business Administration</a
+                  >
+                </td>
+                <td>2106</td>
+                <td>129834F</td>
+                <td>1.5 or 2 Years</td>
+                <td>Jan/Apr/Jun/Sep</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_commerce.html"
+                    >Master of Commerce</a
+                  >
+                </td>
+                <td>2107</td>
+                <td>129834G</td>
+                <td>1, 1.5 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_eng_management.html"
+                    >Master of Engineering Management</a
+                  >
+                </td>
+                <td>2108</td>
+                <td>129834H</td>
+                <td>2 Years</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_finance.html"
+                    >Master of Finance</a
+                  >
+                </td>
+                <td>2109</td>
+                <td>129834I</td>
+                <td>1 Year</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_management.html"
+                    >Master of Management</a
+                  >
+                </td>
+                <td>2110</td>
+                <td>129834J</td>
+                <td>1, 1.5 or 2 Years</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_marketing.html"
+                    >Master of Marketing</a
+                  >
+                </td>
+                <td>2111</td>
+                <td>129834K</td>
+                <td>1, 1.5 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_pro_accounting.html"
+                    >Master of Professional Accounting</a
+                  >
+                </td>
+                <td>2112</td>
+                <td>129834L</td>
+                <td>1.5 or 2 Years</td>
+                <td>Mar/Aug</td>
+                <td>$35,016</td>
+                <td>UOS</td>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3">
+                  <a href="engineering.html#courses">ENGINEERING</a>
+                </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_eng_electronics.html"
+                    >Master of Engineering in Electronics Engineering</a
+                  >
+                </td>
+                <td>2201</td>
+                <td>139834A</td>
+                <td>1, 2 Years</td>
+                <td>Mar/July</td>
+                <td>$36,688</td>
+                <td>UOS</td>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3"><a href="health.html#courses">HEALTH</a></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/doctor_of_medicine.html"
+                    >Doctor of Medicine</a
+                  >
+                </td>
+                <td>2301</td>
+                <td>149834A</td>
+                <td>4 Years</td>
+                <td>Mar</td>
+                <td>$77,200</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/doctor_of_physiotherapy.html"
+                    >Doctor of Physiotherapy
+                  </a>
+                </td>
+                <td>2302</td>
+                <td>149834B</td>
+                <td>3 Years</td>
+                <td>Aug</td>
+                <td>$58,100</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_chiropractic.html"
+                    >Master of Chiropractic
+                  </a>
+                </td>
+                <td>2303</td>
+                <td>149834C</td>
+                <td>2 or 3 Years^</td>
+                <td>Mar</td>
+                <td>$33,160</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_clinical_audiology.html"
+                    >Master of Clinical Audiology
+                  </a>
+                </td>
+                <td>2304</td>
+                <td>149834D</td>
+                <td>2 Years</td>
+                <td>Mar</td>
+                <td>$37,488</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_public_health.html"
+                    >Master of Public Health</a
+                  >
+                </td>
+                <td>2305</td>
+                <td>149834F</td>
+                <td>1.5 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$33,160</td>
+                <td>UOS</td>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3">
+                  <a href="information_technology.html#courses"
+                    >INFORMATION TECHNOLOGY</a
+                  >
+                </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_data_science.html"
+                    >Master of Data Science</a
+                  >
+                </td>
+                <td>2401</td>
+                <td>159834A</td>
+                <td>1 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$42,600</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_info_system_management.html"
+                    >Master of Information Systems Management</a
+                  >
+                </td>
+                <td>2402</td>
+                <td>159834B</td>
+                <td>1 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$42,600</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_IT_AI.html"
+                    >Master of Information Technology in Artificial
+                    Intelligence</a
+                  >
+                </td>
+                <td>2403</td>
+                <td>159834C</td>
+                <td>2 Years</td>
+                <td>Mar/Aug</td>
+                <td>$42,600</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_IT_Cyber.html"
+                    >Master of Information Technology in Cyber Security</a
+                  >
+                </td>
+                <td>2404</td>
+                <td>159834D</td>
+                <td>1, 1.5 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$42,600</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_IT_IOT.html"
+                    >Master of Information Technology in Internet of Things</a
+                  >
+                </td>
+                <td>2405</td>
+                <td>159834E</td>
+                <td>1 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$42,600</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_IT_Network.html"
+                    >Master of Information Technology in Networking</a
+                  >
+                </td>
+                <td>2406</td>
+                <td>159834F</td>
+                <td>1 or 2 Years^</td>
+                <td>Mar/Aug</td>
+                <td>$42,600</td>
+                <td>UOS</td>
+              </tr>
+              <tr class="table-info">
+                <th class="p-3">
+                  <a href="security.html#courses"
+                    >SECURITY, INTELLIGENCE AND CRIMINOLOGY</a
+                  >
+                </th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_counter_terror.html"
+                    >Master of Counter Terrorism</a
+                  >
+                </td>
+                <td>2501</td>
+                <td>169834A</td>
+                <td>1 or 1.5 Years</td>
+                <td>Mar/Aug</td>
+                <td>$41,400</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_criminology.html"
+                    >Master of Criminology</a
+                  >
+                </td>
+                <td>2502</td>
+                <td>169834B</td>
+                <td>1 or 1.5 Years</td>
+                <td>Mar/Aug</td>
+                <td>$41,400</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_cyber_security_analysis.html"
+                    >Master of Cyber Security Analysis</a
+                  >
+                </td>
+                <td>2503</td>
+                <td>169834C</td>
+                <td>1 or 1.5 Years</td>
+                <td>Mar/Aug</td>
+                <td>$41,400</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_intelligence.html"
+                    >Master of Intelligence</a
+                  >
+                </td>
+                <td>2504</td>
+                <td>169834D</td>
+                <td>1 or 1.5 Years</td>
+                <td>Mar/Aug</td>
+                <td>$41,400</td>
+                <td>UOS</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="./courses/master_of_security_strategic_studies.html"
+                    >Master of Security and Strategic Studies
+                  </a>
+                </td>
+                <td>2505</td>
+                <td>169834E</td>
+                <td>1 or 1.5 Years</td>
+                <td>Mar/Aug</td>
+                <td>$41,400</td>
+                <td>UOS</td>
+              </tr>
+            </table>
+          </div>
+        </details>
+
+        <div class="shard"></div>
+        <h4 class="p-3">Student Services and Amenities Fee (SSAF)</h4>
+        <details>
+          <summary>What is SSAF?</summary>
+          <p class="p-3">
+            SSAF is a fee all students pay, which funds services and amenities
+            including sporting and recreational activities, employment and
+            career advice, health and welfare, study skills programs,
+            orientation, child care, financial advice, overseas student services
+            and food services.
+          </p>
+
+          <p class="p-3">
+            The University consults with students and their representatives
+            about what you see as the priorities for student services and
+            amenities.
+          </p>
+        </details>
+
+        <div class="shard"></div>
+        <h4 class="p-3">Other costs</h4>
+        <h6 class="p-3">
+          Apart from tuition fees (for your program and subjects) and SSAF,
+          there are a number of costs associated with studying at university.
+          Make sure you find out what additional costs you'll have while
+          studying at UOS.
+        </h6>
+
+        <details>
+          <summary>Repeating subjects</summary>
+          <p class="p-3">
+            If you are required or choose to repeat a subject that you have
+            already studied, the fee for that subject will be reapplied.
+          </p>
+
+          <p class="p-3">
+            That means you will need to pay the fee again (every time you repeat
+            the same subject), even if you paid it when you first studied that
+            subject.
+          </p>
+        </details>
+
+        <details>
+          <summary>Textbooks</summary>
+          <p class="p-3">
+            Textbooks can be expensive with costs varying according to the
+            program and subjects you're studying. Textbooks are often compulsory
+            and you will be required to use them for weekly readings,
+            assessments or open book exams.
+          </p>
+          <p class="p-3">
+            You can find out more information about where to purchase textbooks
+            on the textbook page. The University Library buys at least one copy
+            of every prescribed textbook, which are held in 'closed reserve' so
+            they can't be taken out of the library. You can photocopy one
+            chapter or 10% of the number of pages of a textbook (whichever is
+            greater) without infringing copyright laws. The library also aims to
+            hold every 'recommended reading' book in closed reserve.
+          </p>
+          <p class="p-3">Second-hand textbooks are also available to buy.</p>
+        </details>
+
+        <details>
+          <summary>Travel costs</summary>
+          <p class="p-3">
+            Getting to uni often has associated costs, whether you're using
+            public transport or driving. It's important to know how you're going
+            to get to and from uni, and how much that will cost each week or
+            across the teaching term.
+          </p>
+        </details>
+
+        <details>
+          <summary>Photocopying and printing</summary>
+          <p class="p-3">
+            Frequent printing of lecture notes at the computer labs can add
+            considerably to your stationery costs. Take the time to look over a
+            journal article or textbook chapter before you photocopy or print.
+            If there's only a small amount of information relevant to what you
+            need, you're better off making notes (remember to reference) than
+            wasting paper to print/photocopy. Look around for cheaper
+            photocopying rates, and compare places like Officeworks with the
+            university libraries.
+          </p>
+        </details>
+
+        <details>
+          <summary>Stationery</summary>
+          <p class="p-3">
+            Writing paper and photocopy/printer paper can be surprisingly
+            expensive. Buy large packs of A4 notepaper at discount stores (e.g.
+            Kmart, Big W) and keep any left over for the next teaching term. Use
+            both sides of the paper for writing notes and for printing draft
+            versions of assignments. Recycle binders/lever arch folders after
+            each term, rather than storing notes in them.
+          </p>
+        </details>
+
+        <details>
+          <summary>ID Cards</summary>
+          <ul>
+            <li>Replacement ID card $26.00</li>
+            <li>Temporary ID card $16.00</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>International Letters</summary>
+          <ul>
+            <li>Proof of Enrolment Letter $25.00</li>
+            <li>Expense Letter $25.00</li>
+            <li>Graduation Application Confirmation Letter $25.00</li>
+            <li>Progress Report Letter $25.00</li>
+            <li>Percentage of Course Completion Letter $25.00</li>
+            <li>Vacation Work Letter $25.00</li>
+            <li>Vacation Travel Letter $25.00</li>
+            <li>Vacation Work Completing Students $25.00</li>
+          </ul>
+        </details>
+
+        <hr />
+        <div class="shard"></div>
+        <h4 class="p-3">Saving on tuition fees and financial help</h4>
+        <h6 class="p-3">
+          Domestic and international students can save time and money if
+          eligible for a scholarships and Recognition of Prior Learning (RPL).
+          There is also financial help for domestic students and some support is
+          available to international students.
+        </h6>
+
+        <details>
+          <summary>Scholarships</summary>
+          <p class="p-3">
+            Each year, UOS awards millions of dollars in scholarships.
+          </p>
+
+          <a href="" type="button" class="btn btn-lg btn-info p-3"
+            >See our Scholarships</a
+          >
+        </details>
+
+        <details>
+          <summary>Recognition of prior learning (RPL)</summary>
+          <p class="p-3">
+            Get recognised for your qualifications and save time and tuition
+            fees.
+          </p>
+
+          <a
+            href="recognition.html"
+            type="button"
+            class="btn btn-lg btn-info p-3"
+            >Find out more about RPL</a
+          >
+        </details>
+      </div>
+      <br />
+      <div class="container-fluid" id="Enquire">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <br />
+              <h4 class="mt-3 p-3">
+                Domestic and International student enquiries
+              </h4>
+              <br />
+            </div>
+            <div class="col-md-5 p-3 text-center">
+              <p>
+                Domestic: Call <a href="tel:+95 1 2541 1111">+95 1 2541 1111</a>
+              </p>
+              <p>
+                International: Call
+                <a href="tel:+95 1 2541 1000">+95 1 2541 1000</a>
+              </p>
+              <a
+                href="admission.html"
+                type="button"
+                class="btn btn-lg btn-danger mt-3 p-3"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------- recog  Ends --------->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!---------- Footer  Starts --------->
+    <footer>
+      <div class="footer">
+        <br />
+        <table class="footer__cont">
+          <tr class="footer_header">
+            <td><a class="footer__hlink">Quick links</a></td>
+            <td><a class="footer__hlink">Information for</a></td>
+            <td><a class="footer__hlink">Faculties, schools and college</a></td>
+            <td><a class="footer__hlink">Media</a></td>
+            <td><a class="footer__hlink">Contact us</a></td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="home.html" class="footer__link">Home</a></td>
+            <td>
+              <a href="study.html#intro" class="footer__link"
+                >Future Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_business.html#welcome-business"
+                class="footer__link"
+                >Faculty of Business</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#Exhibition" class="footer__link">Gallery</a>
+            </td>
+            <td>
+              <a href="contact.html" class="footer__link"
+                >Location and contacts</a
+              >
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="find_course.html#intro" class="footer__link"
+                >Find a course</a
+              >
+            </td>
+            <td>
+              <a href="international.html" class="footer__link"
+                >International Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="faculty_of_health.html#welcome-health"
+                class="footer__link"
+                >Faculty of Health</a
+              >
+            </td>
+            <td>
+              <a href="gallery.html#events" class="footer__link">Events</a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="how_to_apply.html#intro" class="footer__link"
+                >How to apply</a
+              >
+            </td>
+            <td>
+              <a href="recognition.html" class="footer__link"
+                >Recognition of Prior Learning</a
+              >
+            </td>
+            <td>
+              <a href="faculty_of_science.html#wahaha" class="footer__link"
+                >Faculty of Science and Engineering</a
+              >
+            </td>
+            <td><a href="news.html#news" class="footer__link">News</a></td>
+            <td>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCrcNBJstILOoDvFMM1CmXIQ"
+                class="footer__icon"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="admission.html" class="footer__link">Admission</a></td>
+            <td>
+              <a href="scholarship.html#intro" class="footer__link"
+                >Scholarships</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="footer__copy">&copy; Copyright UOS. All Rights Reserved</p>
+    </footer>
+    <!---------- Footer Ends --------->
+
+    <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      //Top Button
+      let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        if (pos > 100) {
+          scrollProgress.style.display = "grid";
+        } else {
+          scrollProgress.style.display = "none";
+        }
+        scrollProgress.addEventListener("click", () => {
+          document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#16a7e0 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      };
+      window.onscroll = calcScrollValue;
+      window.onload = calcScrollValue;
+    </script>
+
+    <script>
+      function openSearch() {
+        document.getElementById("Searchbox").style.display = "block";
+      }
+
+      // Close the full screen search box
+      function closeSearch() {
+        document.getElementById("Searchbox").style.display = "none";
+      }
+
+      const sub = document.getElementById("sub"); //get the form id
+      const input = document.getElementById("searchInput"); //get the search input id
+      const searchList = document.getElementById("searchList"); //get the search list where you want your searched item to display
+
+      //search the info.json file and filter it in the search box to appear when searched
+      const searchInfo = async (searchJson) => {
+        //am using Es6 arrow function here
+
+        const response = await fetch("./assets/js/info.json"); //get the json file into your javascript
+
+        const info = await response.json(); //add the .json to the file to make it into a json in the javascript
+
+        //make the searched term in the search box to match what is in the json file and filter it
+        let list = info.filter((infos) => {
+          const infoReg = new RegExp(`^${searchJson}`, "gi"); //the ^ in the REgExp means that only the first letter of the searched value will searched eg i want money to be searched by the first m not the other letters in it
+
+          //the 'gi' above means you can search with both uppercase and lowercase letter and still get the same search value
+
+          return infos.name.match(infoReg); //return what you what the json file to be searched with
+          //as for me i want it to be searched with the name but you can choose anything you want either searched with url or number
+        });
+
+        //how to check if there is no value in the search box and if there is none then don't show anything
+        if (searchJson.length == 0) {
+          list = [];
+          searchList.innerHTML = ""; //makes the info searched to be removed if there is no searched term/word in the input
+        }
+
+        //call the outputInfo function inside the here
+        outputInfo(list);
+      };
+
+      //creating what will be be displayed when you type in your search
+      const outputInfo = (list) => {
+        if (list.length > 0) {
+          //add the search value you want to show when you search the page
+          const inputValue = list
+            .map(
+              (info) => `
+         <div class="card card-body p-3" style="background: #eee;">
+                <h3 class="text-start"><a href="${info.url}" target="_self" id="search-link">${info.name}</a></h3>
+            </div>
+    `
+            )
+            .join("");
+          // add the searched value(inputValue) to the div in index.html (searchList)
+          searchList.innerHTML = inputValue;
+        }
+      };
+
+      // add Eventlistener to the input
+      sub.addEventListener("input", (e) => {
+        //    e.preventDefault(); //stop it from actually submiting the file
+
+        searchInfo(input.value); //
+
+        //    input.value = ''; //after searching remove the value in the input
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bachelor of Social Science | University of Sam</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/uos-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav_header" id="nav_head">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="../php/staff.php" class="nav__hlink">Staff</a>
+        <a href="../international.html" class="nav__hlink">International</a>
+        <a href="../alumni.html#alumni-welcome" class="nav__hlink">Alumni</a>
+        <a href="../news.html#news" class="nav__hlink">News</a>
+        <a href="../admission.html" class="nav__hlink">Admission</a>
+        <a href="../contact.html" class="nav__hlink">Contact Us</a>
+      </nav>
+    </header>
+
+    <!-- Logo Section -->
+    <div class="Logo__Sector">
+      <div class="Logo__img">
+        <a href="../home.html">
+          <img src="../assets/img/Logo.png" alt="" />
+        </a>
+      </div>
+      <button class="openBtn" onclick="openSearch()">
+        <i class="fas fa-search fa-2x" style="color: #000000"></i>
+      </button>
+    </div>
+
+    <div id="Searchbox" class="Searchbox">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >x</span
+      >
+      <div class="Searchbox-content">
+        <h2 class="mb-3 p-3 text-light">Search Everything Here</h2>
+        <form id="sub">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            id="searchInput"
+          />
+          <div id="searchList"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Navigation Bars -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__dropdownitem">
+          <a href="../study.html#intro" class="nav__link">Study</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="8"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="../study.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="../find_course.html#intro" class="header__link"
+                  >FIND A COURSE</a
+                >
+              </td>
+              <td>
+                <a href="../study.html#info" class="header__link"
+                  >INFORMATION FOR</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../business.html#courses" class="nav__ddlink"
+                  >Business</a
+                >
+              </td>
+              <td>
+                <a href="../undergraduate.html#intro" class="nav__ddlink"
+                  >Undergraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../engineering.html#courses" class="nav__ddlink"
+                  >Engineering</a
+                >
+              </td>
+              <td>
+                <a href="../postgraduate.html#intro" class="nav__ddlink"
+                  >Postgraduate Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../health.html#courses" class="nav__ddlink">Health</a>
+              </td>
+              <td>
+                <a href="../international.html" class="nav__ddlink"
+                  >International Students</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a
+                  href="../information_technology.html#courses"
+                  class="nav__ddlink"
+                  >Information Technology</a
+                >
+              </td>
+              <td>
+                <a href="../entry_requirement.html" class="nav__ddlink"
+                  >Entry Requirements</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../security.html#courses" class="nav__ddlink"
+                  >Security, intelligence and criminology</a
+                >
+              </td>
+              <td>
+                <a href="../fees.html#intro" class="nav__ddlink"
+                  >Fees and costs</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="../curstudent.html#intro" class="nav__link"
+            >Current Students</a
+          >
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="3">
+                <a href="../curstudent.html#intro" class="nav__ddlink"
+                  >Overview</a
+                >
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="../curstudent.html#oppo" class="header__link"
+                  >OPPORTUNITIES</a
+                >
+              </td>
+              <td>
+                <a href="../curstudent.html#support" class="header__link"
+                  >SUPPORT</a
+                >
+              </td>
+              <td>
+                <a href="../curstudent.html#life" class="header__link"
+                  >Life at UOS</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../scholarship.html#intro" class="nav__ddlink"
+                  >Scholarships</a
+                >
+              </td>
+              <td>
+                <a href="../curstudent.html#access" class="nav__ddlink"
+                  >Accessibility service</a
+                >
+              </td>
+              <td>
+                <a href="../php/student.php" class="nav__ddlink"
+                  >Student Portal</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../curstudent.html#global" class="nav__ddlink"
+                  >Global opportunities</a
+                >
+              </td>
+              <td>
+                <a href="../curstudent.html#academic" class="nav__ddlink"
+                  >Academic support</a
+                >
+              </td>
+              <td>
+                <a href="../gallery.html#events" class="nav__ddlink">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../curstudent.html#career" class="nav__ddlink"
+                  >Career development</a
+                >
+              </td>
+              <td>
+                <a href="../curstudent.html#health" class="nav__ddlink"
+                  >Health and wellbeing</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="../gallery.html#Exhibition" class="nav__link">Gallery</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="6"></td>
+            </tr>
+
+            <tr class="overview">
+              <td colspan="2">
+                <a href="../gallery.html#Exhibition" class="nav__ddlink"
+                  >Overview</a
+                >
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a href="../gallery.html#Exhibition" class="header__link"
+                  >Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="../gallery.html#events" class="header__link">Events</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../gallery.html#current" class="nav__ddlink"
+                  >Current Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="../gallery.html#sports" class="nav__ddlink">Sports</a>
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../gallery.html#future" class="nav__ddlink"
+                  >Upcoming Exhibitions</a
+                >
+              </td>
+              <td>
+                <a href="../gallery.html#activities" class="nav__ddlink"
+                  >Activities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../gallery.html#past" class="nav__ddlink"
+                  >Past Exhibitions</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="nav__dropdownitem">
+          <a href="../about.html#intro" class="nav__link">About Us</a>
+          <table class="dropdown__content">
+            <tr class="blank">
+              <td rowspan="7"></td>
+            </tr>
+            <tr class="overview">
+              <td colspan="3">
+                <a href="../about.html#intro" class="nav__ddlink">Overview</a>
+              </td>
+            </tr>
+
+            <tr class="table_header">
+              <td>
+                <a
+                  href="../university.html#facilities__about"
+                  class="header__link"
+                  >About UOS</a
+                >
+              </td>
+              <td>
+                <a href="../campus.html#service" class="header__link"
+                  >Campus Services</a
+                >
+              </td>
+              <td>
+                <a href="../facilities.html#intro" class="header__link"
+                  >Facilities</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../university.html#vision" class="nav__ddlink"
+                  >Vision and strategy</a
+                >
+              </td>
+              <td>
+                <a href="../campus.html#student" class="nav__ddlink"
+                  >Students life and support</a
+                >
+              </td>
+              <td>
+                <a href="../facilities.html#library" class="nav__ddlink"
+                  >Library</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../campus.html#intro" class="nav__ddlink"
+                  >Our campus</a
+                >
+              </td>
+              <td>
+                <a href="../campus.html#security" class="nav__ddlink"
+                  >Campus security</a
+                >
+              </td>
+              <td>
+                <a href="../facilities.html#cafe" class="nav__ddlink"
+                  >Café, bar and restaurant</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../faculties.html#intro" class="nav__ddlink"
+                  >Our faculties</a
+                >
+              </td>
+              <td>
+                <a href="../campus.html#security" class="nav__ddlink"
+                  >Children and youth</a
+                >
+              </td>
+            </tr>
+
+            <tr class="contents">
+              <td>
+                <a href="../contact.html" class="nav__ddlink"
+                  >Location and contacts</a
+                >
+              </td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Bachelor Starts -->
+    <div class="bachelor">
+      <div class="bachelor-top">
+        <div class="container">
+          <nav
+            style="--bs-breadcrumb-divider: '>'; font-weight: 500"
+            aria-label="breadcrumb"
+          >
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="../home.html">University of Sam</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="../study.html#intro">Study</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="../security.html#courses"
+                  >Security, intelligence and criminology</a
+                >
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Bachelor of Social Science
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="mt-3 p-3">Bachelor of Social Science</h2>
+        <p class="mt-3 p-3">
+          PROGRAM CODE: <span>1503</span> &nbsp; &nbsp; &nbsp; &nbsp;CRICOS
+          CODE:
+          <span>069834C </span>
+        </p>
+
+        <a href="../contact.html" type="button" class="btn btn-lg" id="apply"
+          >Apply now</a
+        >
+        <a href="../admission.html" type="button" class="btn btn-lg" id="ask"
+          >Ask a question</a
+        >
+      </div>
+      <div class="blah mt-3">
+        <div class="tabs">
+          <div class="tab-2">
+            <label for="tab2-1"
+              >Overview<br /><span>Subjects, careers and fees</span></label
+            >
+            <input id="tab2-1" name="tabs-two" type="radio" checked="checked" />
+            <div>
+              <h4 class="mb-3 p-3">Overview</h4>
+              <div class="table-responsive">
+                <table class="table table-borderless">
+                  <tr>
+                    <td>
+                      <i class="far fa-check-circle"></i>&nbsp; International
+                      selection rank<br />&nbsp; &nbsp; &nbsp; 75
+                    </td>
+                    <td>
+                      <i class="far fa-clock"></i>&nbsp; Duration<br />&nbsp;
+                      &nbsp; &nbsp; Full time: 3 years
+                    </td>
+                    <td rowspan="2">
+                      <i class="fas fa-map-marker-alt"></i>&nbsp; Location and
+                      start dates<br />&nbsp; &nbsp; &nbsp;UOS <br />&nbsp;
+                      &nbsp; &nbsp;Session 1 (19 March 2024) <br />&nbsp; &nbsp;
+                      &nbsp;Session 2 (22 August 2024)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <i class="fas fa-book-open"></i>&nbsp; Study options
+                      <br />&nbsp; &nbsp; &nbsp; Full Time <br />&nbsp; &nbsp;
+                      &nbsp; In person, on campus
+                    </td>
+                    <td>
+                      <i class="fas fa-coins"></i>&nbsp; Fees <br />&nbsp;
+                      &nbsp; &nbsp; Estimated annual fee $35,720
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="row">
+                <div class="col-md-6 p-3">
+                  <h4 class="p-3">Summary</h4>
+                  <p class="p-3">
+                    How do people respond to a serious disease outbreak such as
+                    coronavirus? What communication methods do protesters use to
+                    bypass government-controlled media? How can violent crime be
+                    reduced and our neighbourhoods made safer? What impact do
+                    social inequalities have on opportunities? Questions like
+                    these are at the heart of social science, which is the study
+                    of society and the relationships among individuals.
+                  </p>
+
+                  <p class="p-3">
+                    The Bachelor of Social Science will help you gain insights
+                    into the science of people, places and social problems. With
+                    the skills you’ll develop in social research and applied
+                    social science, you’ll be prepared to make valuable
+                    contributions to some of the world’s biggest issues.
+                  </p>
+                </div>
+
+                <div class="col-md-6 p-3">
+                  <h4 class="p-3">Key features</h4>
+                  <ul type="square" class="p-3">
+                    <li class="p-3">
+                      <strong>Broaden your knowledge and skill set </strong
+                      ><br />Gain skills in social research design, methods,
+                      practice and application across various data analysis
+                      techniques and technologies.
+                    </li>
+                    <li class="p-3">
+                      <strong> Build your cultural knowledge </strong>
+                      <br />Develop your understanding of issues relevant to
+                      culturally diverse social environments.
+                    </li>
+                    <li class="p-3">
+                      <strong
+                        >Combine your learning with practical and professional
+                        experience </strong
+                      ><br />Undertake an internship with one of our research
+                      partners and get on-the-job training and the chance to
+                      work on a research project.
+                    </li>
+                    <li class="p-3">
+                      <strong
+                        >Acquire the knowledge and skills employers want </strong
+                      ><br />Study a degree co-designed by government
+                      departments, community groups, activist organisations and
+                      trade unions.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="course-stru mt-3">
+                <h4 class="p-3 mt-3">Course structure</h4>
+                <p class="p-3"><strong>Focused and flexible study</strong></p>
+                <p class="p-3">
+                  At the heart of our bachelor degrees is focus and flexibility.
+                  As such, all our degrees have a core zone and a flexible zone.
+                  Your core zone provides your area of study’s focus and
+                  consists of the units you’re required to complete. Your
+                  flexible zone allows you to follow your passions – gain more
+                  depth in your chosen area or explore something different.
+                </p>
+                <div class="course-info">
+                  <div class="infographic">
+                    <div class="infographic__grid">
+                      <div class="infographic__grid__item">
+                        <img
+                          src="../assets/img/core.png"
+                          class="infographic__grid__item__img"
+                        />
+                        <h2 class="infographic__grid__item__title title-dkblue">
+                          Core Zone
+                        </h2>
+                        <p class="infographic__grid__item__p">
+                          160 credit points
+                        </p>
+                      </div>
+                      <!---->
+                      <div class="infographic__grid__item">
+                        <img
+                          src="../assets/img/flexibility.png"
+                          class="infographic__grid__item__img"
+                        />
+                        <h2 class="infographic__grid__item__title title-orange">
+                          Flexible Zone
+                        </h2>
+                        <p class="infographic__grid__item__p">
+                          80 credit points
+                        </p>
+                      </div>
+                      <!---->
+                      <div class="infographic__grid__item">
+                        <img
+                          src="../assets/img/qualification.png"
+                          class="infographic__grid__item__img"
+                        />
+                        <h2 class="infographic__grid__item__title title-ltblue">
+                          Qualification
+                        </h2>
+                        <p class="infographic__grid__item__p">
+                          240 credit points
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="career">
+                <h4 class="p-3 mt-3">Career outcomes</h4>
+                <p class="p-3"><strong>Set your career in motion </strong></p>
+                <p class="p-3">
+                  So that you’re equipped with the knowledge and skills
+                  employers require now and in the future, we design many of our
+                  degrees in consultation with a range of industries and
+                  sectors. Having such experts involved in creating the
+                  fundamentals of your degree provides you with opportunities to
+                  contextualise your learning, and gain the latest career
+                  insights.
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4 class="p-3">Professions</h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul>
+                          <li>Academic</li>
+                          <li>Advocate or lobbyist</li>
+                          <li>Change agent or manager</li>
+                          <li>Criminal justice and corrections consultant</li>
+                          <li>Development assessor</li>
+                          <li>Evaluator</li>
+                          <li>Human resources professional</li>
+                          <li>Journalist</li>
+                          <li>Local council officer</li>
+                          <li>Market analyst</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul>
+                          <li>Market or social researcher</li>
+                          <li>Non-government worker</li>
+                          <li>Policy analyst</li>
+                          <li>Private sector consultant</li>
+                          <li>Resource manager</li>
+                          <li>Urban or regional planner</li>
+                          <li>Welfare officer</li>
+                          <li>Youth worker</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="p-3">Employers</h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul>
+                          <li>Businesses and corporations</li>
+                          <li>Charitable organisations</li>
+                          <li>Community service providers</li>
+                          <li>Consulting firms</li>
+                          <li>Educational institutions</li>
+                          <li>Government agencies and departments</li>
+                          <li>
+                            Humanitarian aid, health and development agencies
+                          </li>
+                          <li>NGOs</li>
+                          <li>Research institutes</li>
+                          <li>Speech technology research companies</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul>
+                          <li>Think tanks and policy research institutes</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="test mt-3 p-3">
+                <div id="content">
+                  <div class="testimonial">
+                    <blockquote>
+                      To fulfil the Professional and Community Engagement (PACE)
+                      requirements of my degree, I had the opportunity to go to
+                      Malaysian Borneo to work alongside Partners of Community
+                      Organisations Sabah Trust (PACOS Trust) to conduct a
+                      social research project on the implementation of the
+                      Kaiduan Dam. Not only was it the most rewarding experience
+                      of my life to date, but it gave purpose to my degree.
+                    </blockquote>
+                    <div></div>
+                    <p>
+                      Maddison Passerelli &mdash; Bachelor of Social Science
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="test mt-3 p-3">
+                <div id="content">
+                  <div class="testimonial">
+                    <blockquote>
+                      UOS' Bachelor of Social Science offers a rewarding journey
+                      with a diverse curriculum and dedicated faculty.
+                      Emphasizing critical thinking and real-world applications,
+                      it prepares students for impactful contributions.
+                    </blockquote>
+                    <div></div>
+                    <p>Taylor Roberts &mdash; Bachelor of Social Science</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-2">
+            <label for="tab2-2"
+              >How to apply<br /><span
+                >Requirements and selection criteria</span
+              ></label
+            >
+            <input id="tab2-2" name="tabs-two" type="radio" />
+            <div>
+              <div class="entry">
+                <h4 class="p-3 mt-3">Entry requirements</h4>
+                <div class="table-responsive">
+                  <table class="table table-borderless">
+                    <tr>
+                      <td colspan="2">Simple steps to entry at UOS</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <i class="far fa-check-circle"></i>&nbsp; Meet the
+                        academic requirements
+                      </td>
+                      <td>
+                        <i class="far fa-check-circle"></i>&nbsp; Meet the
+                        minimum English language requirements
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+                <h4 class="p-3 mt-3">Academic requirements</h4>
+                <div class="hea"><h4>International selection rank: 75</h4></div>
+                <p class="p-3">
+                  The selection rank is based on the Myanmar Tertiary Admission
+                  Rank (MTAR). It determines the minimum eligibility
+                  requirements for entry to UOS.
+                </p>
+
+                <details>
+                  <summary>What is an International selection Rank?</summary>
+                  <p class="p-3">
+                    Your home country score is converted into an Myanmar
+                    selection rank. Our qualification converter tool can help
+                    you calculate the minimum score you need for your entry.
+                  </p>
+                </details>
+
+                <details>
+                  <summary>
+                    How do I know if my qualification is recognised?
+                  </summary>
+                  <p class="p-3">
+                    UOS recognises a range of international academic
+                    qualifications for direct entry to our courses, including:
+                  </p>
+                  <ul>
+                    <li>
+                      senior secondary qualifications from more than 40
+                      countries
+                    </li>
+                    <li>several Myanmar and overseas foundation programs</li>
+                    <li>
+                      diplomas, associate degrees and bachelor degrees assessed
+                      as comparable in standard to Myanmar qualifications.
+                    </li>
+                  </ul>
+                </details>
+
+                <details>
+                  <summary>
+                    What if I don’t meet the academic requirements?
+                  </summary>
+                  <p class="p-3">
+                    You may still qualify for admission under our International
+                    Academic Entry Program (IAEP), which considers your overall
+                    performance and your results in specific subjects relevant
+                    to your selected studies.
+                  </p>
+                </details>
+                <hr />
+                <h4 class="p-3 mt-3">English language requirements</h4>
+                <p class="p-3">
+                  All UOS applicants are required to provide evidence of English
+                  language proficiency. The standard of English required for
+                  entry is based on the IELTS Academic test. Other accepted
+                  evidence of English proficiency, including minimum scores on
+                  other English tests and qualifications, can be checked using
+                  the conversion tool.
+                </p>
+
+                <p class="p-3">
+                  The required standard of English for entry is:
+                </p>
+                <div class="table-reponsive">
+                  <table class="table table-borderless" id="ielts">
+                    <tr>
+                      <th>IELTS band</th>
+                      <th>Minimum score required</th>
+                    </tr>
+                    <tr>
+                      <td>Overall</td>
+                      <td>6.5</td>
+                    </tr>
+                    <tr>
+                      <td>Reading</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>Writing</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>Listening</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>Speaking</td>
+                      <td>6</td>
+                    </tr>
+                  </table>
+                </div>
+                <p class="p-3">
+                  You may also satisfy the English language requirements by:
+                </p>
+
+                <ul>
+                  <li>
+                    passing an approved English language test at the required
+                    level
+                  </li>
+                  <li>
+                    holding a qualification from an approved country with
+                    English as the language of instruction
+                  </li>
+                  <li>
+                    completing an approved high school qualification or
+                    foundation program with study in English
+                  </li>
+                  <li>
+                    completing an approved English for Academic Purposes (EAP)
+                    program.
+                  </li>
+                </ul>
+                <details>
+                  <summary>What if I don't meet the requirements?</summary>
+                  <p class="p-3">
+                    If you don’t meet the English requirements for your course,
+                    you may be issued an offer of study that includes an English
+                    preparation program at the UOS English Language Centre
+                    (ELC). If you receive a packaged offer, you can apply for a
+                    single student visa covering both your English preparation
+                    program and your course.
+                  </p>
+
+                  <p class="p-3">
+                    The length of your English program will depend on your
+                    current English level and the minimum English requirements
+                    for your course. Our admissions team will be able to
+                    recommend the number of weeks required when you submit your
+                    application.
+                  </p>
+                </details>
+
+                <details>
+                  <summary>What English language tests are approved?</summary>
+                  <p class="p-3">
+                    We accept the IELTS Academic, TOEFL iBT (internet-based),
+                    Pearson Test of English (PTE) Academic, Cambridge English
+                    Qualifications (C1 Advanced or C2 Proficiency), and the
+                    Occupational English Test (OET).
+                  </p>
+                </details>
+                <hr />
+
+                <h4 class="p-3 mt-3">
+                  Additional information and requirements
+                </h4>
+
+                <p class="p-3"><strong>Assumed knowledge</strong></p>
+                <p class="p-3">None.</p>
+
+                <p class="p-3"><strong>Inherent requirements</strong></p>
+                <p class="p-3">
+                  To be eligible to graduate from your degree, you must satisfy
+                  the inherent requirements – essential activities, capacities
+                  and academic requisites – of your degree.
+                </p>
+
+                <hr />
+
+                <h4 class="p-3 mt-3">Recognition of prior learning (RPL)</h4>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <p class="p-3">
+                      If you’ve completed prior study at diploma level or
+                      higher, you may be eligible for credit towards your
+                      degree.
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <p>Your prior learning may consist of:</p>
+                    <ul>
+                      <li>formal learning (post-secondary study)</li>
+                      <li>
+                        informal and non-formal learning (work and life
+                        experience).
+                      </li>
+                    </ul>
+                    <a href="../recognition.html#intro"
+                      >Learn more about RPL ></a
+                    >
+                  </div>
+                </div>
+
+                <hr />
+
+                <h4 class="p-3 mt-3">Scholarships</h4>
+                <p class="p-3">
+                  UOS offers a variety of scholarships that recognise a range of
+                  factors, including academic or athletic achievement,
+                  leadership experience and volunteer work, or financial need
+                  and hardship. Additional scholarships may be available for
+                  selected areas of study.
+                </p>
+
+                <a class="p-3" href="../scholarship.html#intro"
+                  >See all scholarships ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="Enquire">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <br />
+              <h4 class="mt-3 p-3">
+                Develop the specialist skills and knowledge to succeed in this
+                influential and growing industry
+              </h4>
+              <br />
+            </div>
+            <div class="col-md-5 p-3 text-center">
+              <p>
+                Domestic: Call <a href="tel:+95 1 2541 1111">+95 1 2541 1111</a>
+              </p>
+              <p>
+                International: Call
+                <a href="tel:+95 1 2541 1000">+95 1 2541 1000</a>
+              </p>
+              <a
+                href="../admission.html"
+                type="button"
+                class="btn btn-lg btn-danger mt-3 p-3"
+                >Find out more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bachelor Starts -->
+    <div id="progress">
+      <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <!---------- Footer  Starts --------->
+    <footer>
+      <div class="footer">
+        <br />
+        <table class="footer__cont">
+          <tr class="footer_header">
+            <td><a class="footer__hlink">Quick links</a></td>
+            <td><a class="footer__hlink">Information for</a></td>
+            <td><a class="footer__hlink">Faculties, schools and college</a></td>
+            <td><a class="footer__hlink">Media</a></td>
+            <td><a class="footer__hlink">Contact us</a></td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td><a href="../home.html" class="footer__link">Home</a></td>
+            <td>
+              <a href="../study.html#intro" class="footer__link"
+                >Future Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="../faculty_of_business.html#welcome-business"
+                class="footer__link"
+                >Faculty of Business</a
+              >
+            </td>
+            <td>
+              <a href="../gallery.html#Exhibition" class="footer__link"
+                >Gallery</a
+              >
+            </td>
+            <td>
+              <a href="../contact.html" class="footer__link"
+                >Location and contacts</a
+              >
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="../find_course.html#intro" class="footer__link"
+                >Find a course</a
+              >
+            </td>
+            <td>
+              <a href="../international.html" class="footer__link"
+                >International Students</a
+              >
+            </td>
+            <td>
+              <a
+                href="../faculty_of_health.html#welcome-health"
+                class="footer__link"
+                >Faculty of Health</a
+              >
+            </td>
+            <td>
+              <a href="../gallery.html#events" class="footer__link">Events</a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="../how_to_apply.html#intro" class="footer__link"
+                >How to apply</a
+              >
+            </td>
+            <td>
+              <a href="../recognition.html" class="footer__link"
+                >Recognition of Prior Learning</a
+              >
+            </td>
+            <td>
+              <a href="../faculty_of_science.html#wahaha" class="footer__link"
+                >Faculty of Science and Engineering</a
+              >
+            </td>
+            <td><a href="../news.html#news" class="footer__link">News</a></td>
+            <td>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-facebook-circle"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-twitter"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCrcNBJstILOoDvFMM1CmXIQ"
+                class="footer__icon"
+                ><i class="bx bxl-youtube"></i
+              ></a>
+              <a href="https://github.com/Sam-mx" class="footer__icon"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+            </td>
+          </tr>
+
+          <tr class="footer_contents">
+            <td>
+              <a href="../admission.html" class="footer__link">Admission</a>
+            </td>
+            <td>
+              <a href="../scholarship.html#intro" class="footer__link"
+                >Scholarships</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <p class="footer__copy">&copy; Copyright UOS. All Rights Reserved</p>
+    </footer>
+    <!---------- Footer Ends --------->
+
+    <script src="../assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      //Top Button
+      let calcScrollValue = () => {
+        let scrollProgress = document.getElementById("progress");
+        let progressValue = document.getElementById("progress-value");
+        let pos = document.documentElement.scrollTop;
+        let calcHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrollValue = Math.round((pos * 100) / calcHeight);
+        if (pos > 100) {
+          scrollProgress.style.display = "grid";
+        } else {
+          scrollProgress.style.display = "none";
+        }
+        scrollProgress.addEventListener("click", () => {
+          document.documentElement.scrollTop = 0;
+        });
+        scrollProgress.style.background = `conic-gradient(#fd264f ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+      };
+      window.onscroll = calcScrollValue;
+      window.onload = calcScrollValue;
+    </script>
+
+    <script>
+      function openSearch() {
+        document.getElementById("Searchbox").style.display = "block";
+      }
+
+      // Close the full screen search box
+      function closeSearch() {
+        document.getElementById("Searchbox").style.display = "none";
+      }
+
+      const sub = document.getElementById("sub"); //get the form id
+      const input = document.getElementById("searchInput"); //get the search input id
+      const searchList = document.getElementById("searchList"); //get the search list where you want your searched item to display
+
+      //search the info.json file and filter it in the search box to appear when searched
+      const searchInfo = async (searchJson) => {
+        //am using Es6 arrow function here
+
+        const response = await fetch("../assets/js/info2.json"); //get the json file into your javascript
+
+        const info = await response.json(); //add the .json to the file to make it into a json in the javascript
+
+        //make the searched term in the search box to match what is in the json file and filter it
+        let list = info.filter((infos) => {
+          const infoReg = new RegExp(`^${searchJson}`, "gi"); //the ^ in the REgExp means that only the first letter of the searched value will searched eg i want money to be searched by the first m not the other letters in it
+
+          //the 'gi' above means you can search with both uppercase and lowercase letter and still get the same search value
+
+          return infos.name.match(infoReg); //return what you what the json file to be searched with
+          //as for me i want it to be searched with the name but you can choose anything you want either searched with url or number
+        });
+
+        //how to check if there is no value in the search box and if there is none then don't show anything
+        if (searchJson.length == 0) {
+          list = [];
+          searchList.innerHTML = ""; //makes the info searched to be removed if there is no searched term/word in the input
+        }
+
+        //call the outputInfo function inside the here
+        outputInfo(list);
+      };
+
+      //creating what will be be displayed when you type in your search
+      const outputInfo = (list) => {
+        if (list.length > 0) {
+          //add the search value you want to show when you search the page
+          const inputValue = list
+            .map(
+              (info) => `
+     <div class="card card-body p-3" style="background: #eee;">
+            <h3 class="text-start"><a href="${info.url}" target="_self" id="search-link">${info.name}</a></h3>
+        </div>
+`
+            )
+            .join("");
+          // add the searched value(inputValue) to the div in index.html (searchList)
+          searchList.innerHTML = inputValue;
+        }
+      };
+
+      // add Eventlistener to the input
+      sub.addEventListener("input", (e) => {
+        //    e.preventDefault(); //stop it from actually submiting the file
+
+        searchInfo(input.value); //
+
+        //    input.value = ''; //after searching remove the value in the input
+      });
+    </script>
+  </body>
+</html>

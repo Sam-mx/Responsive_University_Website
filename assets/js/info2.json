@@ -1,0 +1,142 @@
+[
+    {
+        "name": "About Us",
+        "url": "../about.html#intro"
+},
+    {
+        "name": "Admission",
+        "url": "../admission.html"
+},
+    {
+        "name": "Alumni",
+        "url": "../alumni.html"
+},
+    {
+        "name": "Business",
+        "url": "../business.html#courses"
+},
+    {
+        "name": "Campus",
+        "url": "../campus.html#intro"
+},
+    {
+        "name": "Contact",
+        "url": "../contact.html"
+},
+    {
+        "name": "Current Student",
+        "url": "../curstudent.html#intro"
+},
+{
+    "name": "Engineering",
+    "url": "../Engineering.html#courses"
+},
+{
+    "name": "Entry Requirements",
+    "url": "../entry_requirement.html"
+},
+{
+    "name": "Facilities",
+    "url": "../facilities.html#intro"
+},
+{
+    "name": "Faculties",
+    "url": "../faculties.html#intro"
+},
+{
+    "name": "Faculty of Business",
+    "url": "../faculty_of_business.html#welcome-business"
+},
+{
+    "name": "Faculty of Health",
+    "url": "../faculty_of_health.html#welcome-health"
+},
+{
+    "name": "Faculty of Science and Engineering",
+    "url": "../faculty_of_science.html#wahaha"
+},
+{
+    "name": "Fees and costs",
+    "url": "../fees.html#intro"
+},
+{
+    "name": "Find a Course",
+    "url": "../find_course.html#intro"
+},
+{
+    "name": "Gallery",
+    "url": "../gallery.html#Exhibition"
+},
+{
+    "name": "Health",
+    "url": "../health.html#courses"
+},
+{
+    "name": "How to Apply",
+    "url": "../how_to_apply.html#intro"
+},
+{
+    "name": "Information Technology",
+    "url": "../information_technology.html#courses"
+},
+{
+    "name": "International Students",
+    "url": "../international.html"
+},
+{
+    "name": "News",
+    "url": "../news.html#news"
+},
+{
+    "name": "Postgraduate Students",
+    "url": "../postgraduate.html#intro"
+},
+{
+    "name": "Recognition of Prior Learning",
+    "url": "../recognition.html#intro"
+},
+{
+    "name": "Scholarship",
+    "url": "../scholarship.html#intro"
+},
+{
+    "name": "Security, Intelligence and Criminology",
+    "url": "../security.html#courses"
+},
+{
+    "name": "Study Now",
+    "url": "../study.html#intro"
+},
+{
+    "name": "Undergraduate Students",
+    "url": "../undergraduate.html#intro"
+},
+{
+    "name": "About the univeristy",
+    "url": "../university.html#facilities__about"
+},
+{
+    "name": "Student Portal",
+    "url": "../php/student.php"
+},
+{
+    "name": "Staff Portal",
+    "url": "../php/staff.php"
+},
+{
+    "name": "Course Areas",
+    "url": "../study.html#intro"
+},
+{
+    "name": "Global Opportunities",
+    "url": "../curstudent.html#global"
+},
+{
+    "name": "Events",
+    "url": "../gallery.html#events"
+},
+{
+    "name": "Activities",
+    "url": "../gallery.html#activities"
+}
+]
