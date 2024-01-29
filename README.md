@@ -111,6 +111,7 @@
 
 # **Introduction**
 
+> Here is my project's User Manual. I am writing this project by scratch and not fully rely on the frameworks in order to know all the basics of HTML, CSS and Javascript.
 > We are appreciative that you have selected the University of Sam (UOS)
 > website as your entry point to a multitude of scholarly resources. You
 > can confidently navigate the digital world of UOS with the help of
