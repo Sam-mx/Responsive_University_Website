@@ -1,4 +1,4 @@
-# University of Sam
+# 🌟 University of Sam 🌟
 
 ## Descriptions
 
@@ -9,6 +9,10 @@ A Responsive Web Page for my Final Project of the higher diploma. A very user-fr
 - User-Friendly University Pages
 - Staff Portal
 - Student Portal
+
+## User Manual
+
+🌟 To learn more about the specifics of this website, you can view the User Manual Documentation that I have uploaded here. 🌟
 
 ## Tech Stacks Used:
 
